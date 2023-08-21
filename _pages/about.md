@@ -19,7 +19,7 @@ News
 + ✨ **[2023-08-24]** A paper was accepted by [ESEC/FSE'23](https://2023.esec-fse.org/), which introduce a dynamic data fault localization technique for DNNs namely $DFauLo$.
 
 
-+ ✨ **[2023-08-06]** The $DeepView$ paper received Distinguished Paper Award at [Internetware'23](https://conf.researchr.org/home/internetware-2023) !
++ ✨ **[2023-08-06]** The $DeepView$ paper received *Distinguished Paper Award* at [Internetware'23](https://conf.researchr.org/home/internetware-2023) !
 
 + ✨ **[2023-07-12]** I'm now coding *Rust* to [OpenHarmoney](https://gitee.com/openharmony) as a [Huawei](https://www.huawei.com/cn/) intern.
 
