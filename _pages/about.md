@@ -28,10 +28,6 @@ News
 Publications
 ======
 + ### 2023
-  - **Dynamic Data Fault Localization for Deep Neural Networks.**
-    Yining Yin, Yang Feng, **Shihao Weng**, Zixi Liu, Yuan Yao, Yichi Zhang, Zhihong Zhao, Zhenyu Chen.
-    *Proceedings of the 31st ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering* **<span style="color:red;">(ESEC/FSE 2023) (CCF-A)</span>**.
-  - **Prioritizing Testing Instances to Enhance the Robustness of Object Detection Systems.**
-   **Shihao Weng**, Yang Feng, Yining Yin, Jia Liu.
-   *Proceedings of the 14th Asia-Pacific Symposium on Internetware* **<span style="color:red;">(Internetware 2023) (Distinguished Paper Award) (CCF-C)</span>**.
+  - **Dynamic Data Fault Localization for Deep Neural Networks.**  Yining Yin, Yang Feng, **Shihao Weng**, Zixi Liu, Yuan Yao, Yichi Zhang, Zhihong Zhao, Zhenyu Chen.  *Proceedings of the 31st ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering* **<span style="color:red;">(ESEC/FSE 2023) (CCF-A)</span>**.
+  - **Prioritizing Testing Instances to Enhance the Robustness of Object Detection Systems.**  **Shihao Weng**, Yang Feng, Yining Yin, Jia Liu.  *Proceedings of the 14th Asia-Pacific Symposium on Internetware* **<span style="color:red;">(Internetware 2023) (Distinguished Paper Award) (CCF-C)</span>**.
 
