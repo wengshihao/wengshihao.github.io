@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a $postgraduate$ student from [Software Institute](https://software.nju.edu.cn/), [Nanjing University](https://www.nju.edu.cn/). My research interest includes Data Cleaning | Debugging for DNN | LLM, Rust language analysis and code learning. If you have any questions about me and my research, please feel free to drop me an email via: shweng@smail.nju.edu.cn.
+I am a $postgraduate$ student from [Software Institute](https://software.nju.edu.cn/), [Nanjing University](https://www.nju.edu.cn/). My research interest includes Data Cleaning \| Debugging for DNN \| LLM, Rust language analysis and code learning. If you have any questions about me and my research, please feel free to drop me an email via: shweng@smail.nju.edu.cn.
 
 
 Now, I am supervised by [Prof. Feng](https://fengyang-nju.github.io/) (Research Supervisior) from [Department of Computer Science and Technology](https://cs.nju.edu.cn/main.htm), [Nanjing University](https://www.nju.edu.cn/) and [Prof. Liu](http://www.iselab.cn/html/people/faculty/JiaLiu.html) from [Software Institute](https://software.nju.edu.cn/), [Nanjing University](https://www.nju.edu.cn/). Before that, I obtained my B.S. degree from the [School of Artificial Intelligence and Computer Science](http://ai.jiangnan.edu.cn/), [JiangNan University](https://www.jiangnan.edu.cn/), under the guidance of [Prof. Lu](http://iip.nju.edu.cn/index.php/Luhy).
@@ -19,7 +19,7 @@ News
 + ✨ **[2023-08-24]** A paper was accepted by [ESEC/FESE'23](https://2023.esec-fse.org/), which introduce a dynamic data fault localization technique for DNNs namely $DfauLo$.
 
 
-+ ✨ **[2023-08-06]** The $DeepView$ paper received Distinguished Paper Award at Internetware'23!
++ ✨ **[2023-08-06]** The $DeepView$ paper received Distinguished Paper Award at [Internetware'23](https://conf.researchr.org/home/internetware-2023) !
 
 + ✨ **[2023-08-06]** A paper was accepted by [Internetware'23](https://conf.researchr.org/home/internetware-2023), which introduce a prioritization technique for object detection systems namely $DeepView$.
 
