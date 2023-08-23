@@ -19,7 +19,7 @@ News
 + ✨ **[2023-08-24]** A paper was accepted by [ESEC/FSE'23](https://2023.esec-fse.org/), which introduce a dynamic data fault localization technique for DNNs namely $DFauLo$.
 
 
-+ ✨ **[2023-08-06]** The $DeepView$ paper received *Distinguished Paper Award* at [Internetware'23](https://conf.researchr.org/home/internetware-2023) !
++ 🏆 **[2023-08-06]** The $DeepView$ paper received *Distinguished Paper Award* at [Internetware'23](https://conf.researchr.org/home/internetware-2023) !
 
 + ✨ **[2023-07-12]** I'm now coding *Rust* to [OpenHarmoney](https://gitee.com/openharmony) as a [Huawei](https://www.huawei.com/cn/) intern.
 
@@ -31,3 +31,11 @@ Publications
   - **Dynamic Data Fault Localization for Deep Neural Networks.**<br>Yining Yin, Yang Feng, **Shihao Weng**, Zixi Liu, Yuan Yao, Yichi Zhang, Zhihong Zhao, Zhenyu Chen.<br>*Proceedings of the 31st ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering* **<span style="color:red;">(ESEC/FSE 2023) (CCF-A)</span>**.
   - **Prioritizing Testing Instances to Enhance the Robustness of Object Detection Systems.**<br>**Shihao Weng**, Yang Feng, Yining Yin, Jia Liu.<br>*Proceedings of the 14th Asia-Pacific Symposium on Internetware* **<span style="color:red;">(Internetware 2023) (Distinguished Paper Award) (CCF-C)</span>**.
 
+Awards
+======
++ 🏅 *CCF Outstanding Undergraduate Student* of the Year 2022.
+  
++ 🏅 *National Scholarship 2022*.
+  
++ 🏅 *National Scholarship 2021*.
+  
