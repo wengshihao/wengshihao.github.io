@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a Ph.D. student from SSCT-Lab, [Nanjing University](https://www.nju.edu.cn/). My research interest includes Data Cleaning for DNNs or LLMs, Quality Assurance Techniques for Complex AI Systems. If you have any questions about me and my research, please feel free to drop me an e-mail.
+I am a postgraduate student from SSCT-Lab, [Nanjing University](https://www.nju.edu.cn/). My research interest includes Data Cleaning for DNNs or LLMs, Quality Assurance Techniques for Complex AI Systems. If you have any questions about me and my research, please feel free to drop me an e-mail.
 
 
 Now, I am supervised by [Prof. Feng](https://fengyang-nju.github.io/) (Research Supervisior) from [Department of Computer Science and Technology](https://cs.nju.edu.cn/main.htm), [Nanjing University](https://www.nju.edu.cn/) and [Prof. Liu](http://www.iselab.cn/html/people/faculty/JiaLiu.html) from [Software Institute](https://software.nju.edu.cn/), [Nanjing University](https://www.nju.edu.cn/). Before that, I obtained my B.S. degree from the [School of Artificial Intelligence and Computer Science](http://ai.jiangnan.edu.cn/), [JiangNan University](https://www.jiangnan.edu.cn/), under the guidance of [Prof. Lu](http://iip.nju.edu.cn/index.php/Luhy).
