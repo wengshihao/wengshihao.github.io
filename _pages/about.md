@@ -33,9 +33,13 @@ Publications
 
 Awards
 ======
++ 🏅 *Outstanding Graduate Students of Nanjing University*.
+
++ 🏅 *National Scholarships for Graduate Students 2023*.
+
 + 🏅 *CCF Outstanding Undergraduate Student* of the Year 2022.
   
-+ 🏅 *National Scholarship 2022*.
++ 🏅 *National Scholarship for Undergraduate Students 2021*.
   
-+ 🏅 *National Scholarship 2021*.
++ 🏅 *National Scholarship for Undergraduate Students 2020*.
   
