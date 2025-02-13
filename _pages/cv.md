@@ -7,7 +7,9 @@ redirect_from:
   - /resume
 ---
 
-{% include base_path %}
+{% raw %}{% include base_path %}{% endraw %}
+
+<iframe src="{{ site.baseurl }}/files/CV.pdf" width="100%" height="800" frameborder="no" border="0" marginwidth="0" marginheight="0"></iframe>
 
 Education
 ======
