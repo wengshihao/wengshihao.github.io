@@ -21,7 +21,7 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 
 # Site Author
 author:
-  name             : "Shihao Weng (翁诗浩)"
+  name             : "Shihao Weng"
   avatar           : "images/wsh_profile.jpg"
   bio              : "Nanjing University"
   location         : "Nanjing, China"
