@@ -15,7 +15,7 @@
 }
 
 .map-center {
-  width: 40%;
+  width: 20%;
   margin: 0 auto;
   text-align: center;
 }
