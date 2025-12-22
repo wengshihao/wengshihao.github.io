@@ -32,7 +32,8 @@
 - `FSE'23` [Dynamic Data Fault Localization for Deep Neural Networks](https://dl.acm.org/doi/abs/10.1145/3611643.3616345) \| [![](https://img.shields.io/github/stars/SSCT-Lab/DFauLo?style=social&label=Code+Stars)](https://github.com/SSCT-Lab/DFauLo)
   
   Yining Yin, Yang Feng*, **Shihao Weng**, Zixi Liu, Yuan Yao, Yichi Zhang, Zhihong Zhao, Zhenyu Chen. 
-
-- `Internetware'23` <span style="color:red">(distinguished paper award)</span> [Prioritizing Testing Instances to Enhance the Robustness of Object Detection Systems](https://dl.acm.org/doi/abs/10.1145/3609437.3609446)
+<!-- <span style="color:red">(distinguished paper award)</span>
+ -->
+- `Internetware'23` [Prioritizing Testing Instances to Enhance the Robustness of Object Detection Systems](https://dl.acm.org/doi/abs/10.1145/3609437.3609446) \| [![](https://img.shields.io/badge/Award-distinguished%20paper-blue?style=flat-square&labelColor=%23003049&color=%23669bbc)](https://wengshihao.github.io)
   
    **Shihao Weng**, Yang Feng*, Yining Yin, Jia Liu.
