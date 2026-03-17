@@ -66,7 +66,7 @@
 <br>
 <br>
 
-- `Internetware'23` Prioritizing Testing Instances to Enhance the Robustness of Object Detection Systems
+- `Internetware'23` **Prioritizing Testing Instances to Enhance the Robustness of Object Detection Systems**
 <br>
   <span class="author-me">Shihao Weng</span>, Yang Feng*, Yining Yin, Jia Liu.
 <br>
