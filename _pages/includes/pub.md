@@ -17,8 +17,8 @@
 <br>
    <span class="author-me">Shihao Weng</span>, Yang Feng*, Jincheng Li, Yining Yin, Xiaofei Xie, Jia Liu.
 <br>
-   [![paper](https://img.shields.io/badge/paper-b31b1b?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2601.21695)&nbsp; 
-   [![code](https://img.shields.io/badge/code-181717?logo=github&logoColor=white)](https://github.com/SSCT-Lab/AtPatch)
+   [![paper](https://img.shields.io/badge/paper-b31b1b?logo=arxiv&logoColor=white&style=for-the-badge)](https://arxiv.org/abs/2601.21695)&nbsp; 
+   [![code](https://img.shields.io/badge/code-white?logo=github&logoColor=181717&style=for-the-badge)](https://github.com/SSCT-Lab/AtPatch)
 <br>
 <br>
 
@@ -26,7 +26,7 @@
 <br>
     <span class="author-me">Shihao Weng</span>, Yang Feng*, Yining Yin, Zhenlun Zhang, Baowen Xu.
 <br>
-   [![paper](https://img.shields.io/badge/paper-005F86?logo=googlescholar&logoColor=white)](https://link.springer.com/article/10.1007/s11704-025-41376-3)
+   [![paper](https://img.shields.io/badge/paper-005F86?logo=googlescholar&logoColor=white&style=for-the-badge)](https://link.springer.com/article/10.1007/s11704-025-41376-3)
 <br>
 <br>
 
@@ -34,8 +34,8 @@
 <br>
    Yining Yin, Yang Feng*, <span class="author-me">Shihao Weng</span>, Xinyu Gao, Jia Liu, Zhihong Zhao.
 <br>
-   [![paper](https://img.shields.io/badge/paper-0085CA?logo=acm&logoColor=white)](https://dl.acm.org/doi/10.1145/3755881.3755915)&nbsp; 
-   [![code](https://img.shields.io/badge/code-181717?logo=github&logoColor=white)](https://anonymous.4open.science/r/PtTool-DFF1)
+   [![paper](https://img.shields.io/badge/paper-0085CA?logo=acm&logoColor=white&style=for-the-badge)](https://dl.acm.org/doi/10.1145/3755881.3755915)&nbsp; 
+   [![code](https://img.shields.io/badge/code-white?logo=github&logoColor=181717&style=for-the-badge)](https://anonymous.4open.science/r/PtTool-DFF1)
 <br>
 <br>
 
@@ -43,8 +43,8 @@
 <br>
    <span class="author-me">Shihao Weng</span>, Yang Feng*, Yining Yin, Yuxuan Dai, Jia Liu, Zhihong Zhao.
 <br>
-   [![paper](https://img.shields.io/badge/paper-005F86?logo=googlescholar&logoColor=white)](https://link.springer.com/article/10.1007/s10664-024-10539-4)&nbsp; 
-   [![code](https://img.shields.io/badge/code-181717?logo=github&logoColor=white)](https://github.com/wengshihao/DeepView)
+   [![paper](https://img.shields.io/badge/paper-005F86?logo=googlescholar&logoColor=white&style=for-the-badge)](https://link.springer.com/article/10.1007/s10664-024-10539-4)&nbsp; 
+   [![code](https://img.shields.io/badge/code-white?logo=github&logoColor=181717&style=for-the-badge)](https://github.com/wengshihao/DeepView)
 <br>
 <br>
 
@@ -52,8 +52,8 @@
 <br> 
   Yining Yin, Yang Feng*, <span class="author-me">Shihao Weng</span>, Yuan Yao, Jia Liu, Zhihong Zhao.
 <br>
-   [![paper](https://img.shields.io/badge/paper-0085CA?logo=acm&logoColor=white)](https://dl.acm.org/doi/10.1145/3650212.3680329)&nbsp; 
-   [![code](https://img.shields.io/badge/code-181717?logo=github&logoColor=white)](https://github.com/SSCT-Lab/DataDetective)
+   [![paper](https://img.shields.io/badge/paper-0085CA?logo=acm&logoColor=white&style=for-the-badge)](https://dl.acm.org/doi/10.1145/3650212.3680329)&nbsp; 
+   [![code](https://img.shields.io/badge/code-white?logo=github&logoColor=181717&style=for-the-badge)](https://github.com/SSCT-Lab/DataDetective)
 <br>
 <br>
 
@@ -61,8 +61,8 @@
 <br>
   Yining Yin, Yang Feng*, <span class="author-me">Shihao Weng</span>, Zixi Liu, Yuan Yao, Yichi Zhang, Zhihong Zhao, Zhenyu Chen. 
 <br>
-   [![paper](https://img.shields.io/badge/paper-0085CA?logo=acm&logoColor=white)](https://dl.acm.org/doi/10.1145/3611643.3616345)&nbsp; 
-   [![code](https://img.shields.io/badge/code-181717?logo=github&logoColor=white)](https://github.com/SSCT-Lab/DFauLo)
+   [![paper](https://img.shields.io/badge/paper-0085CA?logo=acm&logoColor=white&style=for-the-badge)](https://dl.acm.org/doi/10.1145/3611643.3616345)&nbsp; 
+   [![code](https://img.shields.io/badge/code-white?logo=github&logoColor=181717&style=for-the-badge)](https://github.com/SSCT-Lab/DFauLo)
 <br>
 <br>
 
@@ -70,9 +70,9 @@
 <br>
   <span class="author-me">Shihao Weng</span>, Yang Feng*, Yining Yin, Jia Liu.
 <br>
-   [![paper](https://img.shields.io/badge/paper-0085CA?logo=acm&logoColor=white)](https://dl.acm.org/doi/10.1145/3609437.3609446)&nbsp; 
-   [![code](https://img.shields.io/badge/code-181717?logo=github&logoColor=white)](https://github.com/wengshihao/DeepView)&nbsp; 
-   ![](https://img.shields.io/badge/🏆%20Distinguished%20Paper%20Award-DAA520)
+   [![paper](https://img.shields.io/badge/paper-0085CA?logo=acm&logoColor=white&style=for-the-badge)](https://dl.acm.org/doi/10.1145/3609437.3609446)&nbsp; 
+   [![code](https://img.shields.io/badge/code-white?logo=github&logoColor=181717&style=for-the-badge)](https://github.com/wengshihao/DeepView)&nbsp; 
+   ![](https://img.shields.io/badge/🏆%20Distinguished%20Paper%20Award-DAA520?style=for-the-badge)
   
    
 
