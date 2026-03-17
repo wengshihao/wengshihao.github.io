@@ -1,19 +1,19 @@
 # 📝 Publications
 
 <!-- 更改_sass/_syntax.scss中的.highlighter-rouge 以改变亮样式-->
-- `ICSE'26` **TACO: Trust Assessment of Large Language Models in Coding Assistance Tasks**
+- **<span class="papercolor">[ICSE'26]</span> TACO: Trust Assessment of Large Language Models in Coding Assistance Tasks**
 <br>
   <span class="author-me">Shihao Weng</span>, Yang Feng*, Jincheng Li, Yining Yin, Zhenlun Zhang, Lyuxi Liu, Jia Liu.
 <br>
 <br>
 
-- `ICSE'26` **VADA: A Multicultural Benchmark for Value-Aware Data Generation and Alignment Evaluation in LLMs**
+- **<span class="papercolor">[ICSE'26]</span> VADA: A Multicultural Benchmark for Value-Aware Data Generation and Alignment Evaluation in LLMs**
 <br>
    Zhenlun Zhang, Yang Feng*, <span class="author-me">Shihao Weng</span>, Yining Yin, Jincheng Li, Jia Liu.
 <br>
 <br>
 
-- `ICSE'26` **AtPatch: Debugging Transformers via Hot-Fixing Over-Attention**
+- **<span class="papercolor">[ICSE'26]</span> AtPatch: Debugging Transformers via Hot-Fixing Over-Attention**
 <br>
    <span class="author-me">Shihao Weng</span>, Yang Feng*, Jincheng Li, Yining Yin, Xiaofei Xie, Jia Liu.
 <br>
@@ -22,7 +22,7 @@
 <br>
 <br>
 
-- `FCS'25` **Data preparation and quality for code-centric generative software engineering tasks: a systematic literature review**
+- **<span class="papercolor">[FCS'25]</span> Data preparation and quality for code-centric generative software engineering tasks: a systematic literature review**
 <br>
     <span class="author-me">Shihao Weng</span>, Yang Feng*, Yining Yin, Zhenlun Zhang, Baowen Xu.
 <br>
@@ -30,7 +30,7 @@
 <br>
 <br>
 
-- `Internetware'25` **Lightweight Probabilistic Coverage Metrics for Efficient Testing of Deep Neural Networks**
+- **<span class="papercolor">[Internetware'25]</span> Lightweight Probabilistic Coverage Metrics for Efficient Testing of Deep Neural Networks**
 <br>
    Yining Yin, Yang Feng*, <span class="author-me">Shihao Weng</span>, Xinyu Gao, Jia Liu, Zhihong Zhao.
 <br>
@@ -39,7 +39,7 @@
 <br>
 <br>
 
-- `EMSE'24` **Seeing the invisible: test prioritization for object detection system**
+- **<span class="papercolor">[EMSE'24]</span> Seeing the invisible: test prioritization for object detection system**
 <br>
    <span class="author-me">Shihao Weng</span>, Yang Feng*, Yining Yin, Yuxuan Dai, Jia Liu, Zhihong Zhao.
 <br>
@@ -48,7 +48,7 @@
 <br>
 <br>
 
-- `ISSTA'24` **Datactive: Data Fault Localization for Object Detection Systems**
+- **<span class="papercolor">[ISSTA'24]</span> Datactive: Data Fault Localization for Object Detection Systems**
 <br> 
   Yining Yin, Yang Feng*, <span class="author-me">Shihao Weng</span>, Yuan Yao, Jia Liu, Zhihong Zhao.
 <br>
@@ -57,7 +57,7 @@
 <br>
 <br>
 
-- `FSE'23` **Dynamic Data Fault Localization for Deep Neural Networks**
+- **<span class="papercolor">[FSE'23]</span> Dynamic Data Fault Localization for Deep Neural Networks**
 <br>
   Yining Yin, Yang Feng*, <span class="author-me">Shihao Weng</span>, Zixi Liu, Yuan Yao, Yichi Zhang, Zhihong Zhao, Zhenyu Chen. 
 <br>
@@ -66,7 +66,7 @@
 <br>
 <br>
 
-- `Internetware'23` **Prioritizing Testing Instances to Enhance the Robustness of Object Detection Systems**
+- **<span class="papercolor">[Internetware'23]</span> Prioritizing Testing Instances to Enhance the Robustness of Object Detection Systems**
 <br>
   <span class="author-me">Shihao Weng</span>, Yang Feng*, Yining Yin, Jia Liu.
 <br>
