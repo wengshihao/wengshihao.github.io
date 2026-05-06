@@ -1,6 +1,14 @@
 # 📝 Publications
 
 <!-- 更改_sass/_syntax.scss中的.highlighter-rouge 以改变亮样式-->
+- **<span class="papercolor">[Preprint]</span> ARGUS: Defending LLM Agents Against Context-Aware Prompt Injection**
+<br>
+  <span class="author-me">Shihao Weng</span>, Yang Feng*, Jinrui Zhang, Xiaofei Xie, Jiongchi Yu, Jia Liu.
+<br>
+   [![paper](https://img.shields.io/badge/paper-b31b1b?logo=arxiv&logoColor=white&style=for-the-badge)](https://arxiv.org/abs/2605.03378)&nbsp; 
+   [![code](https://img.shields.io/badge/code-f5f5f5?logo=github&logoColor=181717&style=for-the-badge)](https://anonymous.4open.science/r/AgentLure)
+<br>
+
 - **<span class="papercolor">[ICSE'26]</span> TACO: Trust Assessment of Large Language Models in Coding Assistance Tasks**
 <br>
   <span class="author-me">Shihao Weng</span>, Yang Feng*, Jincheng Li, Yining Yin, Zhenlun Zhang, Lyuxi Liu, Jia Liu.
