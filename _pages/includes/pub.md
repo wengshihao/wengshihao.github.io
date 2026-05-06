@@ -8,6 +8,7 @@
    [![paper](https://img.shields.io/badge/paper-b31b1b?logo=arxiv&logoColor=white&style=for-the-badge)](https://arxiv.org/abs/2605.03378)&nbsp; 
    [![code](https://img.shields.io/badge/code-f5f5f5?logo=github&logoColor=181717&style=for-the-badge)](https://anonymous.4open.science/r/AgentLure)
 <br>
+<br>
 
 - **<span class="papercolor">[ICSE'26]</span> TACO: Trust Assessment of Large Language Models in Coding Assistance Tasks**
 <br>
