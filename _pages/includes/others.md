@@ -1,33 +1,38 @@
-# 📖 Educations
+<section class="vc-section" id="education">
+<h2 class="vc-section__head"><span class="vc-section__mark"></span>Education</h2>
 
-- *2024.09 - now*, Nanjing University, Ph.D. Student in Software Engineering.
-- *2022.09 - 2024.06*, Nanjing University, Graduate Student in Software Engineering.
-- *2018.09 - 2022.06*, Jiangnan University, Undergraduate Student in Computer Science (advised by Prof. [Heng-yang Lu](https://hengylu.github.io/)).
+<ol class="vc-edu">
+  <li class="vc-edu__item">
+    <span class="vc-edu__when">2024.09 to now</span>
+    <div class="vc-edu__body">
+      <strong>Nanjing University</strong>
+      <span class="vc-edu__detail">Ph.D. · Software Engineering</span>
+    </div>
+  </li>
+  <li class="vc-edu__item">
+    <span class="vc-edu__when">2022.09 – 2024.06</span>
+    <div class="vc-edu__body">
+      <strong>Nanjing University</strong>
+      <span class="vc-edu__detail">M.S. · Software Engineering</span>
+    </div>
+  </li>
+  <li class="vc-edu__item">
+    <span class="vc-edu__when">2018.09 – 2022.06</span>
+    <div class="vc-edu__body">
+      <strong>Jiangnan University</strong>
+      <span class="vc-edu__detail">B.E. · Computer Science · advised by <a href="https://hengylu.github.io/" rel="external">Heng-yang Lu</a></span>
+    </div>
+  </li>
+</ol>
+</section>
 
-
-
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
-
-.map-center {
-  width: 20%;
-  margin: 0 auto;
-  text-align: center;
-}
-</style>
-</head>
-<body> 
-
-<div class="map-center">
+<section class="vc-section vc-section--footer" id="visitors">
+<h2 class="vc-section__head"><span class="vc-section__mark"></span>Visitors</h2>
+<div class="vc-globe">
   <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=BdBrLVUsgxa89RpVD8ozvCxSfOMrMHhXHjAGGpLgCEs"></script>
 </div>
 
-</body>
-</html>
-
-
+<footer class="vc-footer">
+  <p>Last updated {{ site.time | date: "%Y-%m-%d %H:%M" }}</p>
+</footer>
+</section>

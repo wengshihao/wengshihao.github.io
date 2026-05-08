@@ -1,16 +1,67 @@
-<div class="masthead">
-  <div class="masthead__inner-wrap">
-    <div class="masthead__menu">
-      <nav id="site-nav" class="greedy-nav">
-        <button><div class="navicon"></div></button>
-        <ul class="visible-links">
-          <li class="masthead__menu-item masthead__menu-item--lg masthead__menu-home-item"><a href="#about-me">Homepage</a></li>
-          {% for link in site.data.navigation.main %}
-            <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
-          {% endfor %}
-        </ul>
-        <ul class="hidden-links hidden"></ul>
-      </nav>
-    </div>
+<div class="vc-masthead">
+  <div class="vc-masthead__inner">
+    <a class="vc-masthead__brand" href="#about">
+      <span class="vc-masthead__brand-mark" aria-hidden="true"></span>
+      <span class="vc-masthead__brand-name">Shihao Weng</span>
+    </a>
+    <nav class="vc-masthead__nav" aria-label="sections">
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#news">News</a>
+      <a href="#publications">Papers</a>
+      <a href="#service">Service</a>
+    </nav>
+    <button class="vc-masthead__theme" type="button" aria-label="toggle theme" data-vc-theme-toggle>
+      <span class="vc-masthead__theme-icon" data-vc-theme-icon>◐</span>
+    </button>
   </div>
+  <div class="vc-progress" data-vc-progress aria-hidden="true"></div>
 </div>
+
+<script>
+  (function () {
+    var btn = document.querySelector('[data-vc-theme-toggle]');
+    var icon = document.querySelector('[data-vc-theme-icon]');
+    function paint() {
+      var t = document.documentElement.getAttribute('data-theme') || 'light';
+      if (icon) icon.textContent = t === 'dark' ? '☾' : '☀';
+    }
+    paint();
+    if (btn) {
+      btn.addEventListener('click', function () {
+        var cur = document.documentElement.getAttribute('data-theme') || 'light';
+        var next = cur === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', next);
+        try { localStorage.setItem('vc-theme', next); } catch (e) {}
+        paint();
+      });
+    }
+
+    // scroll progress bar
+    var bar = document.querySelector('[data-vc-progress]');
+    if (bar) {
+      var raf = null;
+      function update() {
+        raf = null;
+        var doc = document.documentElement;
+        var max = (doc.scrollHeight - doc.clientHeight) || 1;
+        var p = Math.max(0, Math.min(1, (window.scrollY || doc.scrollTop) / max));
+        bar.style.transform = 'scaleX(' + p + ')';
+      }
+      function onScroll() { if (!raf) raf = window.requestAnimationFrame(update); }
+      window.addEventListener('scroll', onScroll, { passive: true });
+      window.addEventListener('resize', onScroll);
+      update();
+    }
+
+    // one-time fade-in of sections on first paint
+    if (!document.documentElement.hasAttribute('data-vc-faded')) {
+      document.documentElement.setAttribute('data-vc-faded', '1');
+      var secs = document.querySelectorAll('.vc-section');
+      Array.prototype.forEach.call(secs, function (s, i) {
+        s.style.animationDelay = Math.min(i * 60, 360) + 'ms';
+        s.classList.add('vc-fade-in');
+      });
+    }
+  })();
+</script>

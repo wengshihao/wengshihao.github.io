@@ -1,6 +1,24 @@
-# 🎖 Honors and Awards
+<section class="vc-section" id="honors">
+<h2 class="vc-section__head"><span class="vc-section__mark"></span>Honors &amp; Awards</h2>
 
-- Outstanding Graduate Students of Nanjing University (in 2025, 2024 and 2023)
-- National Scholarships for Graduate Students (2023)
-- CCF Outstanding Undergraduate Student (2021)<!-- - (https://www.ccf.org.cn/Focus/2022-12-13/781254.shtml)(2021) -->
-- National Scholarship for Undergraduate Students (in 2021 and 2020)
+<ul class="vc-chips">
+  <li class="vc-chip vc-chip--honor">
+    <span class="vc-chip__year">2023&ndash;25</span>
+    Outstanding Graduate Student of Nanjing University
+    <span class="vc-chip__count">&times;3</span>
+  </li>
+  <li class="vc-chip vc-chip--honor">
+    <span class="vc-chip__year">2023</span>
+    National Scholarship for Graduate Students
+  </li>
+  <li class="vc-chip vc-chip--honor">
+    <span class="vc-chip__year">2021</span>
+    CCF Outstanding Undergraduate Student
+  </li>
+  <li class="vc-chip vc-chip--honor">
+    <span class="vc-chip__year">2020&ndash;21</span>
+    National Scholarship for Undergraduate Students
+    <span class="vc-chip__count">&times;2</span>
+  </li>
+</ul>
+</section>

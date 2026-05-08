@@ -1,4 +1,32 @@
 <script src="assets/js/main.min.js"></script>
 
+<script>
+  (function () {
+    function openExternalInNewTab() {
+      var here = window.location.host;
+      var anchors = document.querySelectorAll('a[href]');
+      Array.prototype.forEach.call(anchors, function (a) {
+        var href = a.getAttribute('href') || '';
+        if (!/^https?:\/\//i.test(href)) return;          // skip #anchor, /relative, mailto:, etc.
+        try {
+          var u = new URL(href);
+          if (u.host && u.host !== here) {
+            a.target = '_blank';
+            var rel = (a.getAttribute('rel') || '').split(/\s+/).filter(Boolean);
+            if (rel.indexOf('noopener') === -1) rel.push('noopener');
+            if (rel.indexOf('noreferrer') === -1) rel.push('noreferrer');
+            a.setAttribute('rel', rel.join(' '));
+          }
+        } catch (e) {}
+      });
+    }
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', openExternalInNewTab);
+    } else {
+      openExternalInNewTab();
+    }
+  })();
+</script>
+
 {% include analytics.html %}
 {% include fetch_google_scholar_stats.html %}
