@@ -659,6 +659,11 @@ h1:before, .anchor:before, .vc-section:before {
   display: flex; flex-wrap: wrap; gap: 8px;
   margin-top: 4px;
 }
+/* keep paper / code / tool chips a uniform width */
+.vc-paper__links .vc-chip {
+  min-width: 84px;
+  justify-content: center;
+}
 
 /* author-me highlight */
 .vc-author-me, .author-me {

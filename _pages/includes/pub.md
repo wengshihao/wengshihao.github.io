@@ -70,6 +70,9 @@
   </div>
   <h3 class="vc-paper__title">TACO: Trust Assessment of Large Language Models in Coding Assistance Tasks</h3>
   <p class="vc-paper__authors"><span class="vc-author-me">Shihao Weng</span>, Yang Feng*, Jincheng Li, Yining Yin, Zhenlun Zhang, Lyuxi Liu, Jia Liu.</p>
+  <div class="vc-paper__links">
+    <a class="vc-chip" href="https://wengshihao.github.io/TACO/" rel="external"><span class="vc-mono">⚙︎</span> tool</a>
+  </div>
 </article>
 
 <article class="vc-paper">
