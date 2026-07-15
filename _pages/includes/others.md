@@ -28,8 +28,23 @@
 
 <section class="vc-section vc-section--footer" id="visitors">
 <h2 class="vc-section__head"><span class="vc-section__mark"></span>Visitors</h2>
-<div class="vc-globe">
-  <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=BdBrLVUsgxa89RpVD8ozvCxSfOMrMHhXHjAGGpLgCEs"></script>
+<div class="vc-visitors" data-goatcounter-total="https://{{ site.goatcounter_code }}.goatcounter.com/counter/TOTAL.json">
+  <div class="vc-visitors__globe" aria-hidden="true">
+    <svg viewBox="0 0 96 96" role="presentation">
+      <circle cx="48" cy="48" r="31"></circle>
+      <ellipse cx="48" cy="48" rx="15" ry="31"></ellipse>
+      <path d="M17 48h62M23 31h50M23 65h50"></path>
+    </svg>
+    <span class="vc-visitors__pulse"></span>
+  </div>
+  <div class="vc-visitors__content">
+    <span class="vc-visitors__eyebrow">Worldwide reach</span>
+    <div class="vc-visitors__metric">
+      <strong class="vc-visitors__count" data-goatcounter-count aria-live="polite">—</strong>
+      <span>visits</span>
+    </div>
+    <span class="vc-visitors__note"><i></i> Privacy-friendly analytics</span>
+  </div>
 </div>
 
 <footer class="vc-footer">

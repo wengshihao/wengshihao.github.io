@@ -20,7 +20,7 @@
       </div>
       <h4 class="vc-highlight__title">ARGUS: Defending LLM Agents Against Context-Aware Prompt Injection</h4>
       <p class="vc-highlight__blurb">
-        We propose a provenance-based defense that traces how untrusted context propagates into an agent's decisions and blocks any action not backed by trustworthy evidence.
+        we propose ARGUS, a causal-provenance auditor for LLM agents. ARGUS verifies whether each proposed action has a complete benign causal justification
       </p>
       <p class="vc-paper__authors"><span class="vc-author-me">Shihao Weng</span>, Yang Feng*, Jinrui Zhang, Xiaofei Xie, Jiongchi Yu, Jia Liu.</p>
       <div class="vc-paper__links">

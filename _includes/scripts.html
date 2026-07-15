@@ -29,4 +29,26 @@
 </script>
 
 {% include analytics.html %}
+{% if site.goatcounter_code %}
+<script data-goatcounter="https://{{ site.goatcounter_code }}.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script>
+  (function () {
+    var card = document.querySelector('[data-goatcounter-total]');
+    var count = card && card.querySelector('[data-goatcounter-count]');
+    if (!card || !count) return;
+
+    fetch(card.getAttribute('data-goatcounter-total'))
+      .then(function (response) {
+        if (!response.ok) throw new Error('Visitor count unavailable');
+        return response.json();
+      })
+      .then(function (data) {
+        count.textContent = data.count || '—';
+      })
+      .catch(function () {
+        card.classList.add('vc-visitors--offline');
+      });
+  })();
+</script>
+{% endif %}
 {% include fetch_google_scholar_stats.html %}
