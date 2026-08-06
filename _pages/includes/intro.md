@@ -5,7 +5,7 @@
     <span class="vc-eyebrow">AI Safety Researcher</span>
     <h1 class="vc-hero__title">
       Hi, I'm <span class="vc-hero__name">Shihao Weng</span>
-      <span class="vc-hero__zh">翁诗浩</span>.
+      <span class="vc-hero__zh">翁诗浩</span>
     </h1>
     <p class="vc-hero__lede vc-hero__thesis">
       I build tools that make <strong>AI agents</strong> more <em>trustworthy</em>.

@@ -43,6 +43,17 @@
   <div class="vc-paper__head">
     <span class="vc-tag vc-tag--preprint">Preprint</span>
   </div>
+  <h3 class="vc-paper__title">AgentAntibody: An Adaptive Immune System for Defending LLM Agents against Prompt Injection</h3>
+  <p class="vc-paper__authors"><span class="vc-author-me">Shihao Weng</span>, Yang Feng*, Xiaofei Xie, Jiongchi Yu.</p>
+  <div class="vc-paper__links">
+    <a class="vc-chip" href="https://arxiv.org/abs/2608.04053" rel="external"><span class="vc-mono">↗</span> paper</a>
+  </div>
+</article>
+
+<article class="vc-paper">
+  <div class="vc-paper__head">
+    <span class="vc-tag vc-tag--preprint">Preprint</span>
+  </div>
   <h3 class="vc-paper__title">Beyond Accuracy: Policy Invariance as a Reliability Test for LLM Safety Judges</h3>
   <p class="vc-paper__authors"><span class="vc-author-me">Shihao Weng</span>, Yang Feng*, Xiaofei Xie.</p>
   <div class="vc-paper__links">
