@@ -1,0 +1,15 @@
+[0] Config.pm:328> INFO - This is Biber 2.21
+[0] Config.pm:331> INFO - Logfile is 'cv-llt.blg'
+[27] biber-darwin:342> INFO - === Wed Aug 19, 2026, 22:26:59
+[33] Biber.pm:421> INFO - Reading 'cv-llt.bcf'
+[63] Biber.pm:999> INFO - Using all citekeys in bib section 0
+[69] Biber.pm:4487> INFO - Processing section 0
+[72] Biber.pm:4678> INFO - Looking for bibtex file 'own-bib.bib' for section 0
+[73] bibtex.pm:1713> INFO - LaTeX decoding ...
+[77] bibtex.pm:1519> INFO - Found BibTeX data source 'own-bib.bib'
+[135] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[135] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[135] Biber.pm:4307> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'en-US'
+[135] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
+[139] bbl.pm:676> INFO - Writing 'cv-llt.bbl' with encoding 'UTF-8'
+[143] bbl.pm:779> INFO - Output to cv-llt.bbl
