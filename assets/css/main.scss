@@ -399,6 +399,16 @@ h1:before,
   transform: none;
 }
 
+.vc-iconlink--label {
+  width: auto;
+  padding: 0 10px;
+  grid-auto-flow: column;
+  gap: 5px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .04em;
+}
+
 /* ==========================================================================
    Sections and hero
    ========================================================================== */

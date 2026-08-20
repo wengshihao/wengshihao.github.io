@@ -22,6 +22,9 @@
     {% if author.googlescholar %}
       <a class="vc-iconlink" href="{{ author.googlescholar }}" title="Google Scholar" aria-label="google scholar"><i class="fas fa-fw fa-graduation-cap" aria-hidden="true"></i></a>
     {% endif %}
+    {% if author.cv %}
+      <a class="vc-iconlink vc-iconlink--label" href="{{ author.cv | relative_url }}" title="Curriculum Vitae" aria-label="curriculum vitae"><i class="fas fa-file-pdf" aria-hidden="true"></i><span>CV</span></a>
+    {% endif %}
   </div>
 
 </aside>
