@@ -4,14 +4,64 @@
 
 <aside itemscope itemtype="http://schema.org/Person" class="vc-card vc-profile">
 
-  <div class="vc-profile__avatar-wrap">
-    <img src="{{ author.avatar }}" class="vc-profile__avatar" alt="{{ author.name }}" />
-    <span class="vc-profile__status" aria-hidden="true"></span>
-  </div>
+  {% if author.photos and author.photos.size > 0 %}
+    <section class="vc-profile__carousel" data-profile-carousel aria-label="Recent photos" aria-roledescription="carousel">
+      <div class="vc-profile__viewport">
+        {% for photo in author.photos %}
+          <div class="vc-profile__slide{% if forloop.first %} is-active{% endif %}"
+               data-profile-slide
+               aria-hidden="{% if forloop.first %}false{% else %}true{% endif %}">
+            <img src="{{ photo.src | relative_url }}"
+                 class="vc-profile__photo"
+                 alt="{{ photo.alt | default: author.name | escape }}"
+                 style="--vc-photo-position: {{ photo.position | default: 'center' }};"
+                 {% unless forloop.first %}loading="lazy"{% endunless %} />
+          </div>
+        {% endfor %}
+
+        {% if author.photos.size > 1 %}
+          <button class="vc-profile__carousel-btn vc-profile__carousel-btn--prev" type="button" data-profile-prev aria-label="Previous photo">
+            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m12.5 4.5-5 5.5 5 5.5"/></svg>
+          </button>
+          <button class="vc-profile__carousel-btn vc-profile__carousel-btn--next" type="button" data-profile-next aria-label="Next photo">
+            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m7.5 4.5 5 5.5-5 5.5"/></svg>
+          </button>
+          <button class="vc-profile__carousel-btn vc-profile__carousel-btn--toggle" type="button" data-profile-toggle aria-label="Start photo rotation" aria-pressed="true">
+            <svg class="vc-profile__pause-icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M7 5v10M13 5v10"/></svg>
+            <svg class="vc-profile__play-icon" viewBox="0 0 20 20" aria-hidden="true"><path d="m7 5 8 5-8 5Z"/></svg>
+          </button>
+        {% endif %}
+      </div>
+
+      {% if author.photos.size > 1 %}
+        <div class="vc-profile__dots" aria-label="Choose a photo">
+          {% for photo in author.photos %}
+            <button type="button"
+                    data-profile-dot
+                    aria-label="Show photo {{ forloop.index }} of {{ forloop.length }}"
+                    aria-current="{% if forloop.first %}true{% else %}false{% endif %}"></button>
+          {% endfor %}
+        </div>
+        <span class="screen-reader-text" data-profile-status aria-live="polite"></span>
+      {% endif %}
+    </section>
+  {% else %}
+    <div class="vc-profile__avatar-wrap">
+      <img src="{{ author.avatar | relative_url }}" class="vc-profile__avatar" alt="{{ author.name }}" />
+      <span class="vc-profile__status" aria-hidden="true"></span>
+    </div>
+  {% endif %}
 
   <h1 class="vc-profile__name" itemprop="name">{{ author.name }}</h1>
   <p class="vc-profile__zh">翁诗浩</p>
-  <p class="vc-profile__role">PhD student</p>
+  <p class="vc-profile__role">
+    <span>Third-year PhD student</span>
+    <span class="vc-profile__affiliation">
+      <span aria-hidden="true">@</span>
+      <img class="vc-school-logo" src="{{ '/images/NJU-logo.svg' | relative_url }}" alt="" aria-hidden="true" />
+      <span>Nanjing University</span>
+    </span>
+  </p>
 
   <div class="vc-profile__divider" aria-hidden="true"></div>
 
@@ -28,3 +78,7 @@
   </div>
 
 </aside>
+
+{% if author.photos and author.photos.size > 1 %}
+  <script src="{{ '/assets/js/profile-carousel.js' | relative_url }}" defer></script>
+{% endif %}

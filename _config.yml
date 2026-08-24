@@ -24,6 +24,13 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Shihao Weng"
   avatar           : "images/wsh_profile-v2.jpg"
+  photos:
+    - src          : "images/photo-1.png"
+      alt          : "Shihao Weng in a recent photo"
+      position     : "58% center"
+    - src          : "images/wsh_profile-v2.jpg"
+      alt          : "Shihao Weng by the sea"
+      position     : "center"
   bio              : "Nanjing University"
   location         : "Singapore"
   employer         :

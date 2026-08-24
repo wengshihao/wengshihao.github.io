@@ -2,18 +2,17 @@
 
 <div class="vc-hero">
   <div class="vc-hero__inner">
-    <span class="vc-eyebrow">AI Safety Researcher</span>
     <h1 class="vc-hero__title">
       Hi, I'm <span class="vc-hero__name">Shihao Weng</span>
       <span class="vc-hero__zh">翁诗浩</span>
     </h1>
     <p class="vc-hero__lede vc-hero__thesis">
-      I build tools that make <strong>AI agents</strong> more <em>trustworthy</em>.
+      My research focuses on making <strong>LLM agents</strong> more <em>trustworthy and reliable</em>.
     </p>
     <p class="vc-hero__lede vc-hero__affil">
-      I am currently a Ph.D. student at <a href="https://www.nju.edu.cn/en/" rel="external">Nanjing University</a>
-      with <a href="https://fengyang-nju.github.io/" rel="external">Yang Feng</a>,
-      visiting <a href="https://smu.edu.sg/" rel="external">SMU</a> with
+      I am currently a third-year Ph.D. student at
+      <span class="vc-school-inline"><img class="vc-school-logo" src="{{ '/images/NJU-logo.svg' | relative_url }}" alt="" aria-hidden="true" /><a href="https://www.nju.edu.cn/en/" rel="external">Nanjing University</a></span>, advised by <a href="https://fengyang-nju.github.io/" rel="external">Yang Feng</a>,
+      and visiting <span class="vc-school-inline"><img class="vc-school-logo" src="{{ '/images/SMU-logo-transparent.png' | relative_url }}" alt="" aria-hidden="true" /><a href="https://smu.edu.sg/" rel="external">Singapore Management University</a></span>, advised by
       <a href="https://xiaofeixie.bitbucket.io" rel="external">Xiaofei Xie</a>.
     </p>
 
