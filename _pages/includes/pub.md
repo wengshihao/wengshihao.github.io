@@ -64,8 +64,8 @@
 
 <article class="vc-paper">
   <div class="vc-paper__head">
-    <span class="vc-tag vc-tag--venue">NeurIPS'26</span>
-    <span class="vc-tag vc-tag--rank">ED Track</span>
+    <span class="vc-tag vc-tag--venue">NeurIPS'26 (ED Track)</span>
+    <span class="vc-tag vc-tag--rank">CCF-A</span>
     <span class="vc-tag vc-tag--spotlight"><span class="vc-tag__spark" aria-hidden="true">✦</span>Spotlight</span>
   </div>
   <h3 class="vc-paper__title">Are LLM Safety Judges Policy-Invariant? A Three-Principle Stress-Test</h3>
