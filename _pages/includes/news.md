@@ -3,8 +3,13 @@
 
 <ol class="vc-timeline">
   <li class="vc-timeline__item">
-    <span class="vc-timeline__date">2025.12</span>
+    <span class="vc-timeline__date">2026.09</span>
     <span class="vc-timeline__dot vc-timeline__dot--hot"></span>
+    <span class="vc-timeline__body">🔥 One paper accepted at <strong>NeurIPS'26</strong> (ED Track) as a <strong>Spotlight</strong> <span class="vc-tag vc-tag--rank">CCF-A</span></span>
+  </li>
+  <li class="vc-timeline__item">
+    <span class="vc-timeline__date">2025.12</span>
+    <span class="vc-timeline__dot"></span>
     <span class="vc-timeline__body">Two papers accepted at <strong>ICSE'26</strong> (Cycle&nbsp;2) <span class="vc-tag vc-tag--rank">CCF-A</span></span>
   </li>
   <li class="vc-timeline__item">

@@ -54,23 +54,25 @@
   <div class="vc-paper__head">
     <span class="vc-tag vc-tag--preprint">Preprint</span>
   </div>
-  <h3 class="vc-paper__title">Beyond Accuracy: Policy Invariance as a Reliability Test for LLM Safety Judges</h3>
-  <p class="vc-paper__authors"><span class="vc-author-me">Shihao Weng</span>, Yang Feng*, Xiaofei Xie.</p>
-  <div class="vc-paper__links">
-    <a class="vc-chip" href="https://arxiv.org/abs/2605.06161" rel="external"><span class="vc-mono">↗</span> paper</a>
-    <a class="vc-chip" href="https://anonymous.4open.science/r/policy-invariance-judge" rel="external"><span class="vc-mono">{}</span> code</a>
-  </div>
-</article>
-
-<article class="vc-paper">
-  <div class="vc-paper__head">
-    <span class="vc-tag vc-tag--preprint">Preprint</span>
-  </div>
   <h3 class="vc-paper__title">ARGUS: Defending LLM Agents Against Context-Aware Prompt Injection</h3>
   <p class="vc-paper__authors"><span class="vc-author-me">Shihao Weng</span>, Yang Feng*, Jinrui Zhang, Xiaofei Xie, Jiongchi Yu, Jia Liu.</p>
   <div class="vc-paper__links">
     <a class="vc-chip" href="https://arxiv.org/abs/2605.03378" rel="external"><span class="vc-mono">↗</span> paper</a>
     <a class="vc-chip" href="https://anonymous.4open.science/r/AgentLure" rel="external"><span class="vc-mono">{}</span> code</a>
+  </div>
+</article>
+
+<article class="vc-paper">
+  <div class="vc-paper__head">
+    <span class="vc-tag vc-tag--venue">NeurIPS'26</span>
+    <span class="vc-tag vc-tag--rank">ED Track</span>
+    <span class="vc-tag vc-tag--spotlight"><span class="vc-tag__spark" aria-hidden="true">✦</span>Spotlight</span>
+  </div>
+  <h3 class="vc-paper__title">Are LLM Safety Judges Policy-Invariant? A Three-Principle Stress-Test</h3>
+  <p class="vc-paper__authors"><span class="vc-author-me">Shihao Weng</span>, Yang Feng*, Xiaofei Xie.</p>
+  <div class="vc-paper__links">
+    <span class="vc-chip vc-chip--tbd"><span class="vc-mono">↗</span> paper · TBD</span>
+    <span class="vc-chip vc-chip--tbd"><span class="vc-mono">{}</span> code · TBD</span>
   </div>
 </article>
 
