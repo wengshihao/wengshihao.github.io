@@ -5,16 +5,13 @@
 <link rel="shortcut icon" href="images/favicon.ico">
 <link rel="manifest" href="images/site.webmanifest">
 
-<meta name="msapplication-TileColor" content="#000000">
-<meta name="msapplication-TileImage" content="images/mstile-144x144.png?v=M44lzPylqQ">
-<meta name="msapplication-config" content="images/browserconfig.xml?v=M44lzPylqQ">
-<meta name="theme-color" content="#fbfbf9">
-<link rel="stylesheet" href="assets/css/academicons.css"/>
+<meta name="theme-color" content="#fcfcfa" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1115" media="(prefers-color-scheme: dark)">
 
-<!-- vibe-coding fonts -->
+<!-- fonts (Exo is imported in main.scss) -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <!-- early theme bootstrap (before paint to avoid flash) -->
 <script>
@@ -28,15 +25,14 @@
   })();
 </script>
 
-<script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    tex2jax: {
-      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-      processEscapes: true
-    }
-  });
-</script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML' async></script>
+<!-- link previews (WeChat, Slack, X, ...) -->
+<meta name="description" content="{{ site.description | escape }}">
+<meta property="og:type" content="website">
+<meta property="og:image" content="{{ site.author.photos[0].src | absolute_url }}">
+<meta property="og:image:alt" content="{{ site.author.photos[0].alt | escape }}">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="{{ site.title | escape }}">
+<meta name="twitter:description" content="{{ site.description | escape }}">
+<meta name="twitter:image" content="{{ site.author.photos[0].src | absolute_url }}">
 
 <!-- end custom head snippets -->

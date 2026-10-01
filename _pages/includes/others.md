@@ -8,9 +8,8 @@
 </ul>
 </section>
 
-<footer class="hp-footer" data-goatcounter-total="https://{{ site.goatcounter_code }}.goatcounter.com/counter/TOTAL.json">
+<footer class="hp-footer">
   <span>© {{ site.time | date: "%Y" }} Shihao Weng</span>
   <span>Updated {{ site.time | date: "%b %Y" }}</span>
-  <span><span data-goatcounter-count aria-live="polite">—</span> visits</span>
   <button class="hp-theme" type="button" aria-label="Toggle dark mode" data-vc-theme-toggle><span data-vc-theme-icon>◐</span></button>
 </footer>

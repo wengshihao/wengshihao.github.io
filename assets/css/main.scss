@@ -220,14 +220,14 @@ strong { color: var(--hp-ink); font-weight: 600; }
 .hp-links a:hover,
 .hp-links a:hover i { color: var(--hp-accent); }
 
-.vc-profile__carousel.hp-photo {
+.hp-photo {
+  display: block;
   width: 184px;
-  margin: 6px 0 0;
-}
-
-.hp-photo .vc-profile__viewport {
+  height: 184px;
+  margin-top: 6px;
+  object-fit: cover;
+  border: 1px solid var(--hp-line);
   border-radius: 14px;
-  box-shadow: none;
 }
 
 /* ==========================================================================
@@ -443,8 +443,7 @@ a.hp-paper__title:hover { color: var(--hp-accent); }
   }
 
   .hp-intro__photo { order: -1; }
-  .vc-profile__carousel.hp-photo { width: 120px; margin: 0; }
-  .hp-photo .vc-profile__carousel-btn { display: none; }
+  .hp-photo { width: 120px; height: 120px; margin-top: 0; }
 
   .page__content .hp-name { font-size: 34px; }
   .hp-name__zh { display: block; margin: 6px 0 0; font-size: .5em; }

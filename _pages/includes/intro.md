@@ -17,6 +17,7 @@
     </nav>
   </div>
   <div class="hp-intro__photo">
-    {% include profile-carousel.html class="hp-photo" %}
+    {% assign photo = site.author.photos | first %}
+    <img class="hp-photo" src="{{ photo.src | relative_url }}" alt="{{ photo.alt }}" width="184" height="184" />
   </div>
 </section>
