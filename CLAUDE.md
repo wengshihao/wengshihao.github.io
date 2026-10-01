@@ -19,26 +19,29 @@ Requires the GitHub Pages Ruby toolchain (Ruby + RubyGems + GCC + Make). The sit
 
 ## Content architecture
 
-The single rendered page is `_pages/about.md`, which uses Jekyll's `include_relative` to stitch together five content fragments — edits to the homepage almost always land in one of these:
+The single rendered page is `_pages/about.md`, which uses Jekyll's `include_relative` to stitch together six content fragments — edits to the homepage almost always land in one of these:
 
 ```
 _pages/about.md
 └── _pages/includes/
-    ├── intro.md     # bio, advisor, contact
-    ├── news.md      # 🔥 News timeline
-    ├── pub.md       # 📝 Publications
-    ├── honers.md    # 🏆 Honors & Awards
-    └── others.md    # extra sections
+    ├── intro.md     # name, bio + research directions, profile links, photo carousel
+    ├── news.md      # News rows
+    ├── pub.md       # Publications, grouped by year
+    ├── honers.md    # Honors
+    ├── service.md   # Service
+    └── others.md    # Education + page footer (visit counter, theme toggle)
 ```
 
-`_config.yml` declares `permalink: /:categories/:title/` and a default layout of `default` with `author_profile: true`, so every page gets the sidebar from `_includes/author-profile.html`. Author identity (name, avatar, social links) lives in `_config.yml` under `author:` — change it there, not in the layouts.
+The homepage is single-column: `about.md` sets `author_profile: false`, so the sidebar (`_includes/author-profile.html`) is not rendered. The photo carousel lives in `_includes/profile-carousel.html` and is included from `intro.md`; photos are listed under `author.photos` in `_config.yml`. Author identity (name, photos, social links) lives in `_config.yml` under `author:` — change it there, not in the layouts.
 
-Custom inline classes used in publication entries (defined in `assets/css/main.scss`):
-- `.papercolor` — venue tag color (currently blue), wraps things like `[ICSE'26]`.
-- `.author-me` — highlights the site owner's name in author lists (purple `#6a4c93`).
-- Publication links use `shields.io` "for-the-badge" badges; follow the existing color/logo conventions in `pub.md` when adding entries (arxiv = `b31b1b`, github code = `f5f5f5`, ACM = `0085CA`, Springer/Google Scholar = `005F86`).
+Design: typographic, card-free. Exo is the display face (name, headings, dates, venues); Inter is the body face. All homepage styles use the `hp-` prefix in `assets/css/main.scss`; colors are tokens on `:root` with a `[data-theme="dark"]` override.
 
-Each publication entry in `pub.md` ends with two `<br>` tags for spacing — preserve that pattern.
+Row pattern shared by News / Honors / Service / Education: `<ul class="hp-rows"><li><span class="hp-when">…</span><span>…</span></li></ul>`.
+
+Publication entry pattern in `pub.md` (inside a `.hp-year` group's `<ol class="hp-papers">`):
+- `.hp-paper__title` — an `<a>` to the paper, or a `<span>` when there is no link yet.
+- `.hp-paper__authors` — wrap the site owner's name in `<span class="hp-me">`; `*` marks the corresponding author.
+- `.hp-paper__meta` — `<span class="hp-venue">` with the full venue name and year (e.g. `NeurIPS 2026`, `arXiv preprint`), optional `<span class="hp-honor">` for awards/spotlights, then `<span class="hp-paper__links">` with plain `paper` / `code` / `tool` links.
 
 ## Google Scholar citation pipeline
 

@@ -1,24 +1,11 @@
-<section class="vc-section" id="honors">
-<h2 class="vc-section__head"><span class="vc-section__mark"></span>Honors &amp; Awards</h2>
+<section class="hp-section" id="honors">
+<h2 class="hp-h2">Honors</h2>
 
-<ul class="vc-chips">
-  <li class="vc-chip vc-chip--honor">
-    <span class="vc-chip__year">2023&ndash;25</span>
-    Outstanding Graduate Student of Nanjing University
-    <span class="vc-chip__count">&times;3</span>
-  </li>
-  <li class="vc-chip vc-chip--honor">
-    <span class="vc-chip__year">2023</span>
-    National Scholarship for Graduate Students
-  </li>
-  <li class="vc-chip vc-chip--honor">
-    <span class="vc-chip__year">2021</span>
-    CCF Outstanding Undergraduate Student
-  </li>
-  <li class="vc-chip vc-chip--honor">
-    <span class="vc-chip__year">2020&ndash;21</span>
-    National Scholarship for Undergraduate Students
-    <span class="vc-chip__count">&times;2</span>
-  </li>
+<ul class="hp-rows">
+  <li><span class="hp-when">2023–25</span><span>Outstanding Graduate Student, Nanjing University <span class="hp-muted">(×3)</span></span></li>
+  <li><span class="hp-when">2023</span><span>National Scholarship for Graduate Students</span></li>
+  <li><span class="hp-when">2023</span><span>Distinguished Paper Award, Internetware 2023</span></li>
+  <li><span class="hp-when">2021</span><span>CCF Outstanding Undergraduate Student</span></li>
+  <li><span class="hp-when">2020–21</span><span>National Scholarship for Undergraduate Students <span class="hp-muted">(×2)</span></span></li>
 </ul>
 </section>

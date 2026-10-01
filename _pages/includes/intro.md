@@ -1,51 +1,22 @@
-<section class="vc-section vc-section--hero" id="about">
-
-<div class="vc-hero">
-  <div class="vc-hero__inner">
-  <div class="vc-hero__text">
-    <h1 class="vc-hero__title">
-      Hi, I'm <span class="vc-hero__name">Shihao Weng</span>
-      <span class="vc-hero__zh">翁诗浩</span>
-    </h1>
-    <p class="vc-hero__lede vc-hero__thesis">
-      My research focuses on making <strong>LLM agents</strong> more <em>trustworthy and reliable</em>.
+<section class="hp-intro" id="about">
+  <div class="hp-intro__text">
+    <h1 class="hp-name">Shihao Weng <span class="hp-name__zh">翁诗浩</span></h1>
+    <p class="hp-role">Ph.D. student · Nanjing University</p>
+    <p>
+      I am a third-year Ph.D. student at <a href="https://www.nju.edu.cn/en/" rel="external">Nanjing University</a>, advised by <a href="https://fengyang-nju.github.io/" rel="external">Prof. Yang Feng</a>, and currently a visiting student at <a href="https://smu.edu.sg/" rel="external">Singapore Management University</a> with <a href="https://xiaofeixie.bitbucket.io" rel="external">Prof. Xiaofei Xie</a>.
     </p>
-    <p class="vc-hero__lede vc-hero__affil">
-      I am currently a third-year Ph.D. student at
-      <span class="vc-school-inline"><img class="vc-school-logo" src="{{ '/images/NJU-logo.svg' | relative_url }}" alt="" aria-hidden="true" /><a href="https://www.nju.edu.cn/en/" rel="external">Nanjing University</a></span>, advised by <a href="https://fengyang-nju.github.io/" rel="external">Yang Feng</a>,
-      and visiting <span class="vc-school-inline"><img class="vc-school-logo" src="{{ '/images/SMU-logo-transparent.png' | relative_url }}" alt="" aria-hidden="true" /><a href="https://smu.edu.sg/" rel="external">Singapore Management University</a></span>, advised by
-      <a href="https://xiaofeixie.bitbucket.io" rel="external">Xiaofei Xie</a>.
+    <p>
+      My research focuses on making <strong>LLM agents trustworthy and reliable</strong>. I currently work on two directions: <strong>self-evolving agents</strong>, which improve themselves toward more trustworthy behavior over time, and <strong>agent defense</strong>, which protects agents against adversarial inputs and compromised tools.
     </p>
-
-    <div class="vc-hero__actions">
-      <a class="vc-pill" href="#publications">
-        <i class="fas fa-fw fa-file-alt" aria-hidden="true"></i> Papers
-      </a>
-      <a class="vc-pill vc-pill--primary" href="mailto:shweng@smail.nju.edu.cn">
-        <i class="fas fa-fw fa-envelope" aria-hidden="true"></i> Email
-      </a>
-      <a class="vc-pill" href="{{ site.author.cv | relative_url }}">
-        <i class="fas fa-fw fa-file-pdf" aria-hidden="true"></i> CV
-      </a>
-      <a class="vc-pill vc-pill--icon" href="{{ site.author.googlescholar }}" rel="external" title="Google Scholar" aria-label="Google Scholar">
-        <i class="fas fa-fw fa-graduation-cap" aria-hidden="true"></i>
-      </a>
-      <a class="vc-pill vc-pill--icon" href="https://github.com/{{ site.author.github }}" rel="external" title="GitHub" aria-label="GitHub">
-        <i class="fab fa-fw fa-github" aria-hidden="true"></i>
-      </a>
-    </div>
+    <p class="hp-note">I'm in Singapore now. Feel free to reach out about anything related to AI.</p>
+    <nav class="hp-links" aria-label="Profiles">
+      <a href="mailto:shweng@smail.nju.edu.cn"><i class="fas fa-envelope" aria-hidden="true"></i>Email</a>
+      <a href="{{ site.author.cv | relative_url }}"><i class="fas fa-file-alt" aria-hidden="true"></i>CV</a>
+      <a href="{{ site.author.googlescholar }}" rel="external"><i class="fas fa-graduation-cap" aria-hidden="true"></i>Scholar</a>
+      <a href="https://github.com/{{ site.author.github }}" rel="external"><i class="fab fa-github" aria-hidden="true"></i>GitHub</a>
+    </nav>
   </div>
-  <div class="vc-hero__media">
-    {% include profile-carousel.html class="vc-hero__photo" %}
+  <div class="hp-intro__photo">
+    {% include profile-carousel.html class="hp-photo" %}
   </div>
-  </div>
-</div>
-
-<div class="vc-statusbar" id="now" role="status" aria-label="now">
-  <span class="vc-statusbar__pill"><span class="vc-statusbar__blink"></span> now</span>
-  <span class="vc-statusbar__item">In Singapore</span>
-  <span class="vc-statusbar__divider">·</span>
-  <span class="vc-statusbar__item">Feel free to reach out to discuss anything related to AI.</span>
-</div>
-
 </section>
