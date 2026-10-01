@@ -76,6 +76,7 @@ include:
 exclude:
   - docs
   - google_scholar_crawler
+  - Shihao_Weng_s_CV
   - "*.sublime-project"
   - "*.sublime-workspace"
   - .asset-cache

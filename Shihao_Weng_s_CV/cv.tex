@@ -1,0 +1,197 @@
+% Shihao Weng -- Curriculum Vitae
+% Build: `make` (XeLaTeX). Exo ships in ./fonts (SIL OFL 1.1); XCharter comes with TeX Live.
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[a4paper,left=2.1cm,right=2.1cm,top=1.9cm,bottom=2.1cm,footskip=0.9cm]{geometry}
+\usepackage{fontspec}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage[hyphens]{url}
+\usepackage[hidelinks]{hyperref}
+
+% ---------------------------------------------------------------- fonts
+\setmainfont{XCharter}[
+  Extension      = .otf,
+  UprightFont    = *-Roman,
+  BoldFont       = *-Bold,
+  ItalicFont     = *-Italic,
+  BoldItalicFont = *-BoldItalic]
+\newfontfamily\exo{Exo-Regular.ttf}[Path=fonts/, BoldFont=Exo-SemiBold.ttf, Ligatures=TeX]
+\newfontfamily\exomedium{Exo-Medium.ttf}[Path=fonts/, Ligatures=TeX]
+\newfontfamily\exosemi{Exo-SemiBold.ttf}[Path=fonts/, LetterSpace=8, Ligatures=TeX]
+\newfontfamily\exobold{Exo-Bold.ttf}[Path=fonts/, Ligatures=TeX]
+
+% --------------------------------------------------------------- colours
+\definecolor{ink}{HTML}{15171C}
+\definecolor{soft}{HTML}{3A3F4A}
+\definecolor{muted}{HTML}{757B87}
+\definecolor{rule}{HTML}{D9D8D2}
+\definecolor{accent}{HTML}{1F4FD1}
+\definecolor{honor}{HTML}{B4530A}
+\color{ink}
+\hypersetup{colorlinks, urlcolor=accent, linkcolor=ink,
+  pdftitle={Shihao Weng - Curriculum Vitae}, pdfauthor={Shihao Weng}}
+
+% ---------------------------------------------------------------- layout
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\linespread{1.08}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[L]{\exomedium\fontsize{7.5}{9}\selectfont\color{muted}Shihao Weng \textperiodcentered{} Curriculum Vitae}
+\fancyfoot[R]{\exomedium\fontsize{7.5}{9}\selectfont\color{muted}Updated \monthname{} \the\year \enspace\textperiodcentered\enspace \thepage\,/\,\pageref*{LastPage}}
+\newcommand{\monthname}{\ifcase\month\or January\or February\or March\or April\or May\or June\or July\or August\or September\or October\or November\or December\fi}
+
+% -------------------------------------------------------------- building blocks
+% Section heading: spaced Exo caps over a hairline.
+\newcommand{\cvsection}[2][]{%
+  \par\addvspace{15pt}%
+  {\exosemi\fontsize{9.5}{11}\selectfont\MakeUppercase{#2}}%
+  \hfill{\fontsize{8.5}{10}\selectfont\color{muted}#1}\par
+  \vspace{3pt}{\color{rule}\hrule height 0.5pt}\vspace{7pt}}
+
+% Right-aligned date / place in Exo.
+\newcommand{\when}[1]{{\exomedium\fontsize{8.8}{10}\selectfont\color{muted}#1}}
+
+% \entry{heading}{date}{detail line (may be empty)}
+\newcommand{\entry}[3]{%
+  {\bfseries #1}\hfill\when{#2}\par
+  \if\relax\detokenize{#3}\relax\else{\color{soft}#3}\par\fi
+  \vspace{6pt}}
+
+% One-line row: text left, date right.
+\newcommand{\row}[2]{#1\hfill\when{#2}\par\vspace{3.5pt}}
+
+\newcommand{\me}{\textbf{Shihao Weng}}
+\newcommand{\honor}[1]{\hspace{0.7em}{\color{honor}\bfseries #1}}
+% CCF venue rank: a quiet Exo label after the venue.
+\newcommand{\ccf}[1]{\hspace{0.7em}{\exomedium\fontsize{8.2}{10}\selectfont\color{muted}CCF-#1}}
+\newcommand{\venue}[1]{\textit{#1}}
+\newcommand{\link}[2]{{\exomedium\fontsize{8.6}{10}\selectfont\href{#1}{#2}}}
+
+% Publication list with Exo labels (C1, J1, P1, ...).
+\newlist{pubs}{enumerate}{1}
+\setlist[pubs]{label={\exomedium\fontsize{8.8}{10}\selectfont\color{muted}\pubprefix\arabic*},
+  labelindent=0pt, labelwidth=1.5em, labelsep=0.7em, leftmargin=2.2em, align=left,
+  itemsep=7.5pt, topsep=3pt, before=\raggedright}
+\newcommand{\pubprefix}{}
+\newcommand{\pubgroup}[2]{%
+  \par\addvspace{9pt}{\exomedium\fontsize{8.8}{10}\selectfont\color{muted}#2}\par\vspace{1pt}%
+  \renewcommand{\pubprefix}{#1}}
+
+% \paper{title}{authors}{venue and notes}{links}
+\newcommand{\paper}[4]{%
+  \item {\bfseries\hyphenpenalty=10000 #1}\par
+  {\fontsize{9.8}{12.2}\selectfont{\color{soft}#2}\par
+  #3\if\relax\detokenize{#4}\relax\else\hspace{0.9em}#4\fi\par}}
+
+\begin{document}
+\fontsize{10.4}{13.6}\selectfont
+
+% ---------------------------------------------------------------- header
+\begin{minipage}[b]{0.56\textwidth}
+  {\exobold\fontsize{26}{28}\selectfont Shihao Weng}\par\vspace{5pt}
+  {\exosemi\fontsize{8.6}{10}\selectfont\color{muted}PH.D. STUDENT \textperiodcentered{} NANJING UNIVERSITY}
+\end{minipage}%
+\hfill
+\begin{minipage}[b]{0.4\textwidth}
+  \raggedleft\fontsize{9.4}{12.4}\selectfont
+  \href{mailto:shweng@smail.nju.edu.cn}{\color{soft}shweng@smail.nju.edu.cn}\par
+  \href{https://wengshihao.github.io/}{\color{soft}wengshihao.github.io}\par
+  \href{https://github.com/wengshihao}{\color{soft}GitHub}\enspace{\color{muted}\textperiodcentered}\enspace
+  \href{https://scholar.google.com/citations?user=TzFeU_IAAAAJ}{\color{soft}Google Scholar}
+\end{minipage}
+
+\vspace{14pt}
+{\color{soft}I work on making \textbf{LLM agents trustworthy and reliable}, along two directions: \textbf{self-evolving agents}, which improve themselves toward more trustworthy behavior over time, and \textbf{agent defense}, which protects agents against adversarial inputs and compromised tools.\par}
+
+% ------------------------------------------------------------- education
+\cvsection{Education}
+\entry{Nanjing University}{2024 -- present}{Ph.D. in Software Engineering \textperiodcentered{} Advisor: \href{https://fengyang-nju.github.io/}{Prof. Yang Feng}}
+\entry{Nanjing University}{2022 -- 2024}{M.S. in Software Engineering}
+\entry{Jiangnan University}{2018 -- 2022}{B.E. in Computer Science and Technology}
+
+\cvsection{Research Visits}
+\entry{The Chinese University of Hong Kong}{Oct 2026 -- present}{Visiting Ph.D. Student \textperiodcentered{} Host: \href{https://www.cse.cuhk.edu.hk/lyu/home}{Prof. Michael R. Lyu}}
+\entry{Singapore Management University}{Sep 2025 -- Sep 2026}{Visiting Ph.D. Student \textperiodcentered{} Host: \href{https://xiaofeixie.bitbucket.io}{Prof. Xiaofei Xie}}
+
+% ---------------------------------------------------------- publications
+\cvsection[* corresponding author\quad CCF: China Computer Federation venue rank]{Publications}
+
+\pubgroup{C}{Conference Papers}
+\begin{pubs}
+\paper{Are LLM Safety Judges Policy-Invariant? A Three-Principle Stress-Test}
+  {\me, Yang Feng*, Xiaofei Xie}
+  {\venue{Conference on Neural Information Processing Systems} (NeurIPS 2026), Evaluations \& Datasets Track\ccf{A}\honor{Spotlight}}
+  {}
+\paper{TACO: Trust Assessment of Large Language Models in Coding Assistance Tasks}
+  {\me, Yang Feng*, Jincheng Li, Yining Yin, Zhenlun Zhang, Lyuxi Liu, Jia Liu}
+  {\venue{IEEE/ACM International Conference on Software Engineering} (ICSE 2026)\ccf{A}}
+  {\link{https://wengshihao.github.io/TACO/}{tool}}
+\paper{AtPatch: Debugging Transformers via Hot-Fixing Over-Attention}
+  {\me, Yang Feng*, Jincheng Li, Yining Yin, Xiaofei Xie, Jia Liu}
+  {\venue{IEEE/ACM International Conference on Software Engineering} (ICSE 2026)\ccf{A}}
+  {\link{https://arxiv.org/abs/2601.21695}{paper}\enspace\link{https://github.com/SSCT-Lab/AtPatch}{code}}
+\paper{VADA: A Multicultural Benchmark for Value-Aware Data Generation and Alignment Evaluation in LLMs}
+  {Zhenlun Zhang, Yang Feng*, \me, Yining Yin, Jincheng Li, Jia Liu}
+  {\venue{IEEE/ACM International Conference on Software Engineering} (ICSE 2026)\ccf{A}}
+  {}
+\paper{Lightweight Probabilistic Coverage Metrics for Efficient Testing of Deep Neural Networks}
+  {Yining Yin, Yang Feng*, \me, Xinyu Gao, Jia Liu, Zhihong Zhao}
+  {\venue{Asia-Pacific Symposium on Internetware} (Internetware 2025)\ccf{C}}
+  {\link{https://dl.acm.org/doi/10.1145/3755881.3755915}{paper}\enspace\link{https://anonymous.4open.science/r/PtTool-DFF1}{code}}
+\paper{Datactive: Data Fault Localization for Object Detection Systems}
+  {Yining Yin, Yang Feng*, \me, Yuan Yao, Jia Liu, Zhihong Zhao}
+  {\venue{ACM SIGSOFT International Symposium on Software Testing and Analysis} (ISSTA 2024)\ccf{A}}
+  {\link{https://dl.acm.org/doi/10.1145/3650212.3680329}{paper}\enspace\link{https://github.com/SSCT-Lab/DataDetective}{code}}
+\paper{Dynamic Data Fault Localization for Deep Neural Networks}
+  {Yining Yin, Yang Feng*, \me, Zixi Liu, Yuan Yao, Yichi Zhang, Zhihong Zhao, Zhenyu Chen}
+  {\venue{ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering} (ESEC/FSE 2023)\ccf{A}}
+  {\link{https://dl.acm.org/doi/10.1145/3611643.3616345}{paper}\enspace\link{https://github.com/SSCT-Lab/DFauLo}{code}}
+\paper{Prioritizing Testing Instances to Enhance the Robustness of Object Detection Systems}
+  {\me, Yang Feng*, Yining Yin, Jia Liu}
+  {\venue{Asia-Pacific Symposium on Internetware} (Internetware 2023)\ccf{C}\honor{Distinguished Paper Award}}
+  {\link{https://dl.acm.org/doi/10.1145/3609437.3609446}{paper}\enspace\link{https://github.com/wengshihao/DeepView}{code}}
+\end{pubs}
+
+\pubgroup{J}{Journal Articles}
+\begin{pubs}
+\paper{Data Preparation and Quality for Code-Centric Generative Software Engineering Tasks: A Systematic Literature Review}
+  {\me, Yang Feng*, Yining Yin, Zhenlun Zhang, Baowen Xu}
+  {\venue{Frontiers of Computer Science}, 2025\ccf{B}}
+  {\link{https://link.springer.com/article/10.1007/s11704-025-41376-3}{paper}}
+\paper{Seeing the Invisible: Test Prioritization for Object Detection System}
+  {\me, Yang Feng*, Yining Yin, Yuxuan Dai, Jia Liu, Zhihong Zhao}
+  {\venue{Empirical Software Engineering} 29(6):154, 2024\ccf{B}}
+  {\link{https://link.springer.com/article/10.1007/s10664-024-10539-4}{paper}\enspace\link{https://github.com/wengshihao/DeepView}{code}}
+\end{pubs}
+
+\pubgroup{P}{Preprints}
+\begin{pubs}
+\paper{AgentAntibody: An Adaptive Immune System for Defending LLM Agents against Prompt Injection}
+  {\me, Yang Feng*, Xiaofei Xie, Jiongchi Yu}
+  {arXiv:2608.04053, 2026}
+  {\link{https://arxiv.org/abs/2608.04053}{paper}}
+\paper{ARGUS: Defending LLM Agents Against Context-Aware Prompt Injection}
+  {\me, Yang Feng*, Jinrui Zhang, Xiaofei Xie, Jiongchi Yu, Jia Liu}
+  {arXiv:2605.03378, 2026}
+  {\link{https://arxiv.org/abs/2605.03378}{paper}\enspace\link{https://anonymous.4open.science/r/AgentLure}{code}}
+\end{pubs}
+
+% ------------------------------------------------------------------ honors
+\cvsection{Honors and Awards}
+\row{Outstanding Graduate Student, Nanjing University \textcolor{muted}{(three consecutive years)}}{2023 -- 2025}
+\row{Distinguished Paper Award, Internetware 2023}{2023}
+\row{National Scholarship for Graduate Students, Ministry of Education of China}{2023}
+\row{CCF Outstanding Undergraduate Student, China Computer Federation}{2021}
+\row{Bronze Medal, 45th ICPC Asia Regional Contest}{2021}
+\row{National Scholarship for Undergraduate Students \textcolor{muted}{(two consecutive years)}}{2020 -- 2021}
+
+% ----------------------------------------------------------------- service
+\cvsection{Academic Service}
+\row{Reviewer, NeurIPS 2026 Workshop (TAE)}{2026}
+
+\end{document}

@@ -43,6 +43,12 @@ Publication entry pattern in `pub.md` (inside a `.hp-year` group's `<ol class="h
 - `.hp-paper__authors` — wrap the site owner's name in `<span class="hp-me">`; `*` marks the corresponding author.
 - `.hp-paper__meta` — `<span class="hp-venue">` with the full venue name and year (e.g. `NeurIPS 2026`, `arXiv preprint`), optional `<span class="hp-honor">` for awards/spotlights, then `<span class="hp-paper__links">` with plain `paper` / `code` / `tool` links.
 
+## CV
+
+Source is `Shihao_Weng_s_CV/cv.tex`, a single hand-written XeLaTeX file styled to match the homepage (Exo for name/headings/dates/labels, XCharter for body; Exo TTFs are vendored in `Shihao_Weng_s_CV/fonts/` under the SIL OFL). Run `make` in that folder: it builds into `build/` (git-ignored) and copies the PDF to `files/Shihao_Weng_CV.pdf`, which is what the homepage links to — commit that PDF along with the `.tex` change. The source folder is in `_config.yml` `exclude:`, so only the PDF is published.
+
+Publications are written directly with the `\paper{title}{authors}{venue and notes}{links}` macro inside the `pubs` lists (C = conference, J = journal, P = preprint); use `\me` for the site owner's name, `\ccf{A}` / `\ccf{B}` / `\ccf{C}` right after the venue for the CCF rank (preprints get none), and `\honor{...}` for awards. The homepage deliberately shows no CCF ranks; the CV does. Keep the CV and `_pages/includes/pub.md` in sync by hand.
+
 ## Google Scholar citation pipeline
 
 Citations shown on the page are pulled from a sibling branch, **not** from `main`:
