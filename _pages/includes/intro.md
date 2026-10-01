@@ -2,6 +2,7 @@
 
 <div class="vc-hero">
   <div class="vc-hero__inner">
+  <div class="vc-hero__text">
     <h1 class="vc-hero__title">
       Hi, I'm <span class="vc-hero__name">Shihao Weng</span>
       <span class="vc-hero__zh">翁诗浩</span>
@@ -23,7 +24,20 @@
       <a class="vc-pill vc-pill--primary" href="mailto:shweng@smail.nju.edu.cn">
         <i class="fas fa-fw fa-envelope" aria-hidden="true"></i> Email
       </a>
+      <a class="vc-pill" href="{{ site.author.cv | relative_url }}">
+        <i class="fas fa-fw fa-file-pdf" aria-hidden="true"></i> CV
+      </a>
+      <a class="vc-pill vc-pill--icon" href="{{ site.author.googlescholar }}" rel="external" title="Google Scholar" aria-label="Google Scholar">
+        <i class="fas fa-fw fa-graduation-cap" aria-hidden="true"></i>
+      </a>
+      <a class="vc-pill vc-pill--icon" href="https://github.com/{{ site.author.github }}" rel="external" title="GitHub" aria-label="GitHub">
+        <i class="fab fa-fw fa-github" aria-hidden="true"></i>
+      </a>
     </div>
+  </div>
+  <div class="vc-hero__media">
+    {% include profile-carousel.html class="vc-hero__photo" %}
+  </div>
   </div>
 </div>
 
