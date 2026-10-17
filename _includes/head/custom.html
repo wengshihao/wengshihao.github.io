@@ -35,4 +35,29 @@
 <meta name="twitter:description" content="{{ site.description | escape }}">
 <meta name="twitter:image" content="{{ site.author.photos[0].src | absolute_url }}">
 
+{% if page.url == "/" %}
+<!-- structured data: tells search engines who this page is about and links the name variants -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Shihao Weng",
+  "alternateName": ["Weng Shihao", "翁诗浩"],
+  "url": "{{ '/' | absolute_url }}",
+  "image": "{{ site.author.photos[0].src | absolute_url }}",
+  "jobTitle": "Ph.D. Student",
+  "affiliation": { "@type": "CollegeOrUniversity", "name": "Nanjing University" },
+  "alumniOf": [
+    { "@type": "CollegeOrUniversity", "name": "Nanjing University" },
+    { "@type": "CollegeOrUniversity", "name": "Jiangnan University" }
+  ],
+  "knowsAbout": ["Trustworthy AI", "Large Language Models", "AI Safety", "LLM Agents"],
+  "sameAs": [
+    "https://scholar.google.com/citations?user=TzFeU_IAAAAJ",
+    "https://github.com/{{ site.author.github }}"
+  ]
+}
+</script>
+{% endif %}
+
 <!-- end custom head snippets -->

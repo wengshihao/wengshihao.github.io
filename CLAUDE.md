@@ -32,6 +32,8 @@ _pages/about.md
     └── others.md    # Education + page footer (visit counter, theme toggle)
 ```
 
+`_pages/includes` (and the repo's `AGENTS.md` / `CLAUDE.md` / `README.md`) are listed in `_config.yml` `exclude:` — `include_relative` still reads the fragments, but otherwise GitHub Pages (via `jekyll-optional-front-matter`) publishes each one as a standalone page with the homepage's title, which pollutes the sitemap and competes with the homepage in search. Keep them excluded. A schema.org `Person` JSON-LD block with name variants (Weng Shihao, 翁诗浩) lives in `_includes/head/custom.html` and renders on the homepage only.
+
 The homepage is single-column: `about.md` sets `author_profile: false`, so the sidebar (`_includes/author-profile.html`) is not rendered. The photo carousel lives in `_includes/profile-carousel.html` and is included from `intro.md`; photos are listed under `author.photos` in `_config.yml`. Author identity (name, photos, social links) lives in `_config.yml` under `author:` — change it there, not in the layouts.
 
 Design: typographic, card-free. Exo is the display face (name, headings, dates, venues); Inter is the body face. All homepage styles use the `hp-` prefix in `assets/css/main.scss`; colors are tokens on `:root` with a `[data-theme="dark"]` override.

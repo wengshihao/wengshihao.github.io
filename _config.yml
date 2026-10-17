@@ -7,7 +7,9 @@
 
 # Site Settings
 title                    : "Shihao Weng (翁诗浩)"
-description              : "Shihao Weng is a Ph.D. student at Nanjing University working on trustworthy AI."
+description              : "Shihao Weng (翁诗浩) is a Ph.D. student at Nanjing University working on trustworthy AI."
+url                      : "https://wengshihao.github.io"
+baseurl                  : ""
 repository               : "wengshihao/wengshihao.github.io"
 google_scholar_stats_use_cdn : true
 goatcounter_code         : "wengshihao"
@@ -70,6 +72,14 @@ include:
   - _pages
   - files
 exclude:
+  # Homepage fragments are stitched in by _pages/about.md via include_relative;
+  # GitHub Pages would otherwise publish each as a duplicate standalone page.
+  - _pages/includes
+  - AGENTS.md
+  - CLAUDE.md
+  - README.md
+  - run_server.sh
+  - Gemfile.lock
   - docs
   - google_scholar_crawler
   - Shihao_Weng_s_CV
@@ -132,6 +142,16 @@ defaults:
     values:
       layout: default
       author_profile: true
+  # Google Search Console ownership file: must stay published, but not in the sitemap
+  - scope:
+      path: "google7c3676bb83636ad8.html"
+    values:
+      sitemap: false
+  # Keep the CCF variant of the CV out of the sitemap (near-duplicate of the main CV)
+  - scope:
+      path: "files/Shihao_Weng_CV_CCF.pdf"
+    values:
+      sitemap: false
 
 
 # Sass/SCSS
