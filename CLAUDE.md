@@ -39,15 +39,15 @@ Design: typographic, card-free. Exo is the display face (name, headings, dates, 
 Row pattern shared by News / Honors / Service / Education: `<ul class="hp-rows"><li><span class="hp-when">…</span><span>…</span></li></ul>`.
 
 Publication entry pattern in `pub.md` (inside a `.hp-year` group's `<ol class="hp-papers">`):
-- `.hp-paper__title` — an `<a>` to the paper, or a `<span>` when there is no link yet.
+- `.hp-paper__title` — always a plain `<span>` (not a link, so the title is easy to select and copy); links go in `.hp-paper__links`.
 - `.hp-paper__authors` — wrap the site owner's name in `<span class="hp-me">`; `*` marks the corresponding author.
 - `.hp-paper__meta` — `<span class="hp-venue">` with the full venue name and year (e.g. `NeurIPS 2026`, `arXiv preprint`), optional `<span class="hp-honor">` for awards/spotlights, then `<span class="hp-paper__links">` with plain `paper` / `code` / `tool` links.
 
 ## CV
 
-Source is `Shihao_Weng_s_CV/cv.tex`, a single hand-written XeLaTeX file styled to match the homepage (Exo for name/headings/dates/labels, XCharter for body; Exo TTFs are vendored in `Shihao_Weng_s_CV/fonts/` under the SIL OFL). Run `make` in that folder: it builds into `build/` (git-ignored) and copies the PDF to `files/Shihao_Weng_CV.pdf`, which is what the homepage links to — commit that PDF along with the `.tex` change. The source folder is in `_config.yml` `exclude:`, so only the PDF is published.
+Source is `Shihao_Weng_s_CV/cv.tex`, a single hand-written XeLaTeX file styled to match the homepage (Exo for name/headings/dates/labels, XCharter for body; Exo TTFs are vendored in `Shihao_Weng_s_CV/fonts/` under the SIL OFL). Run `make` in that folder: it builds two PDFs into `build/` (git-ignored) and copies them to `files/` — `Shihao_Weng_CV.pdf`, the international version with no venue ranks, which is what the homepage links to, and `Shihao_Weng_CV_CCF.pdf`, the domestic version with CCF ranks (built by passing `\def\cvccf{1}` via latexmk `-usepretex`). Commit both PDFs along with the `.tex` change. The source folder is in `_config.yml` `exclude:`, so only the PDFs are published.
 
-Publications are written directly with the `\paper{title}{authors}{venue and notes}{links}` macro inside the `pubs` lists (C = conference, J = journal, P = preprint); use `\me` for the site owner's name, `\ccf{A}` / `\ccf{B}` / `\ccf{C}` right after the venue for the CCF rank (preprints get none), and `\honor{...}` for awards. The homepage deliberately shows no CCF ranks; the CV does. Keep the CV and `_pages/includes/pub.md` in sync by hand.
+Publications are written directly with the `\paper{title}{authors}{venue and notes}{links}` macro inside the `pubs` lists (P = preprint, C = conference, J = journal — preprints come first so the newest work is visible up front); use `\me` for the site owner's name, `\ccf{A}` / `\ccf{B}` / `\ccf{C}` right after the venue for the CCF rank (preprints get none; it renders only in the CCF build), and `\honor{...}` for awards. The homepage and the international CV deliberately show no venue ranks; only the CCF CV does. Keep the CV and `_pages/includes/pub.md` in sync by hand.
 
 ## Google Scholar citation pipeline
 

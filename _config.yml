@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Shihao Weng (翁诗浩)"
-description              : "Shihao Weng is a Ph.D. student at Nanjing University working on trustworthy and reliable LLM agents: self-evolving agents and agent defense."
+description              : "Shihao Weng is a Ph.D. student at Nanjing University working on trustworthy AI."
 repository               : "wengshihao/wengshihao.github.io"
 google_scholar_stats_use_cdn : true
 goatcounter_code         : "wengshihao"
@@ -28,7 +28,7 @@ author:
     - src          : "images/photo-1.jpg"
       alt          : "Shihao Weng in a recent photo"
   bio              : "Nanjing University"
-  location         : "Singapore"
+  location         : "Hong Kong"
   employer         :
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=TzFeU_IAAAAJ&hl=zh-CN&oi=ao"

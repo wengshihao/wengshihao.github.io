@@ -10,27 +10,27 @@
     <p class="hp-paper__meta"><span class="hp-venue">NeurIPS 2026</span> ED Track · <span class="hp-honor">Spotlight</span><span class="hp-paper__links"><span class="hp-soon">paper &amp; code coming soon</span></span></p>
   </li>
   <li class="hp-paper">
-    <a class="hp-paper__title" href="https://wengshihao.github.io/TACO/" rel="external">TACO: Trust Assessment of Large Language Models in Coding Assistance Tasks</a>
+    <span class="hp-paper__title">TACO: Trust Assessment of Large Language Models in Coding Assistance Tasks</span>
     <p class="hp-paper__authors"><span class="hp-me">Shihao Weng</span>, Yang Feng*, Jincheng Li, Yining Yin, Zhenlun Zhang, Lyuxi Liu, Jia Liu</p>
-    <p class="hp-paper__meta"><span class="hp-venue">ICSE 2026</span><span class="hp-paper__links"><a href="https://wengshihao.github.io/TACO/" rel="external">tool</a></span></p>
+    <p class="hp-paper__meta"><span class="hp-venue">ICSE 2026</span><span class="hp-paper__links"><a href="https://dl.acm.org/doi/full/10.1145/3744916.3787835" rel="external">paper</a><a href="https://github.com/wengshihao/TACO" rel="external">code</a><a href="https://wengshihao.github.io/TACO/" rel="external">tool</a></span></p>
   </li>
   <li class="hp-paper">
-    <a class="hp-paper__title" href="https://arxiv.org/abs/2601.21695" rel="external">AtPatch: Debugging Transformers via Hot-Fixing Over-Attention</a>
+    <span class="hp-paper__title">AtPatch: Debugging Transformers via Hot-Fixing Over-Attention</span>
     <p class="hp-paper__authors"><span class="hp-me">Shihao Weng</span>, Yang Feng*, Jincheng Li, Yining Yin, Xiaofei Xie, Jia Liu</p>
     <p class="hp-paper__meta"><span class="hp-venue">ICSE 2026</span><span class="hp-paper__links"><a href="https://arxiv.org/abs/2601.21695" rel="external">paper</a><a href="https://github.com/SSCT-Lab/AtPatch" rel="external">code</a></span></p>
   </li>
   <li class="hp-paper">
     <span class="hp-paper__title">VADA: A Multicultural Benchmark for Value-Aware Data Generation and Alignment Evaluation in LLMs</span>
     <p class="hp-paper__authors">Zhenlun Zhang, Yang Feng*, <span class="hp-me">Shihao Weng</span>, Yining Yin, Jincheng Li, Jia Liu</p>
-    <p class="hp-paper__meta"><span class="hp-venue">ICSE 2026</span></p>
+    <p class="hp-paper__meta"><span class="hp-venue">ICSE 2026</span><span class="hp-paper__links"><a href="https://dl.acm.org/doi/10.1145/3744916.3787807" rel="external">paper</a><a href="https://github.com/zzlzxc/VADA-tool" rel="external">code</a></span></p>
   </li>
   <li class="hp-paper">
-    <a class="hp-paper__title" href="https://arxiv.org/abs/2608.04053" rel="external">AgentAntibody: An Adaptive Immune System for Defending LLM Agents against Prompt Injection</a>
+    <span class="hp-paper__title">AgentAntibody: An Adaptive Immune System for Defending LLM Agents against Prompt Injection</span>
     <p class="hp-paper__authors"><span class="hp-me">Shihao Weng</span>, Yang Feng*, Xiaofei Xie, Jiongchi Yu</p>
     <p class="hp-paper__meta"><span class="hp-venue">arXiv preprint</span><span class="hp-paper__links"><a href="https://arxiv.org/abs/2608.04053" rel="external">paper</a></span></p>
   </li>
   <li class="hp-paper">
-    <a class="hp-paper__title" href="https://arxiv.org/abs/2605.03378" rel="external">ARGUS: Defending LLM Agents Against Context-Aware Prompt Injection</a>
+    <span class="hp-paper__title">ARGUS: Defending LLM Agents Against Context-Aware Prompt Injection</span>
     <p class="hp-paper__authors"><span class="hp-me">Shihao Weng</span>, Yang Feng*, Jinrui Zhang, Xiaofei Xie, Jiongchi Yu, Jia Liu</p>
     <p class="hp-paper__meta"><span class="hp-venue">arXiv preprint</span><span class="hp-paper__links"><a href="https://arxiv.org/abs/2605.03378" rel="external">paper</a><a href="https://anonymous.4open.science/r/AgentLure" rel="external">code</a></span></p>
   </li>
@@ -41,12 +41,12 @@
 <span class="hp-year__label">2025</span>
 <ol class="hp-papers">
   <li class="hp-paper">
-    <a class="hp-paper__title" href="https://link.springer.com/article/10.1007/s11704-025-41376-3" rel="external">Data preparation and quality for code-centric generative software engineering tasks: a systematic literature review</a>
+    <span class="hp-paper__title">Data preparation and quality for code-centric generative software engineering tasks: a systematic literature review</span>
     <p class="hp-paper__authors"><span class="hp-me">Shihao Weng</span>, Yang Feng*, Yining Yin, Zhenlun Zhang, Baowen Xu</p>
     <p class="hp-paper__meta"><span class="hp-venue">Frontiers of Computer Science</span><span class="hp-paper__links"><a href="https://link.springer.com/article/10.1007/s11704-025-41376-3" rel="external">paper</a></span></p>
   </li>
   <li class="hp-paper">
-    <a class="hp-paper__title" href="https://dl.acm.org/doi/10.1145/3755881.3755915" rel="external">Lightweight Probabilistic Coverage Metrics for Efficient Testing of Deep Neural Networks</a>
+    <span class="hp-paper__title">Lightweight Probabilistic Coverage Metrics for Efficient Testing of Deep Neural Networks</span>
     <p class="hp-paper__authors">Yining Yin, Yang Feng*, <span class="hp-me">Shihao Weng</span>, Xinyu Gao, Jia Liu, Zhihong Zhao</p>
     <p class="hp-paper__meta"><span class="hp-venue">Internetware 2025</span><span class="hp-paper__links"><a href="https://dl.acm.org/doi/10.1145/3755881.3755915" rel="external">paper</a><a href="https://anonymous.4open.science/r/PtTool-DFF1" rel="external">code</a></span></p>
   </li>
@@ -57,12 +57,12 @@
 <span class="hp-year__label">2024</span>
 <ol class="hp-papers">
   <li class="hp-paper">
-    <a class="hp-paper__title" href="https://dl.acm.org/doi/10.1145/3650212.3680329" rel="external">Datactive: Data Fault Localization for Object Detection Systems</a>
+    <span class="hp-paper__title">Datactive: Data Fault Localization for Object Detection Systems</span>
     <p class="hp-paper__authors">Yining Yin, Yang Feng*, <span class="hp-me">Shihao Weng</span>, Yuan Yao, Jia Liu, Zhihong Zhao</p>
     <p class="hp-paper__meta"><span class="hp-venue">ISSTA 2024</span><span class="hp-paper__links"><a href="https://dl.acm.org/doi/10.1145/3650212.3680329" rel="external">paper</a><a href="https://github.com/SSCT-Lab/DataDetective" rel="external">code</a></span></p>
   </li>
   <li class="hp-paper">
-    <a class="hp-paper__title" href="https://link.springer.com/article/10.1007/s10664-024-10539-4" rel="external">Seeing the invisible: test prioritization for object detection system</a>
+    <span class="hp-paper__title">Seeing the invisible: test prioritization for object detection system</span>
     <p class="hp-paper__authors"><span class="hp-me">Shihao Weng</span>, Yang Feng*, Yining Yin, Yuxuan Dai, Jia Liu, Zhihong Zhao</p>
     <p class="hp-paper__meta"><span class="hp-venue">Empirical Software Engineering</span><span class="hp-paper__links"><a href="https://link.springer.com/article/10.1007/s10664-024-10539-4" rel="external">paper</a><a href="https://github.com/wengshihao/DeepView" rel="external">code</a></span></p>
   </li>
@@ -73,12 +73,12 @@
 <span class="hp-year__label">2023</span>
 <ol class="hp-papers">
   <li class="hp-paper">
-    <a class="hp-paper__title" href="https://dl.acm.org/doi/10.1145/3611643.3616345" rel="external">Dynamic Data Fault Localization for Deep Neural Networks</a>
+    <span class="hp-paper__title">Dynamic Data Fault Localization for Deep Neural Networks</span>
     <p class="hp-paper__authors">Yining Yin, Yang Feng*, <span class="hp-me">Shihao Weng</span>, Zixi Liu, Yuan Yao, Yichi Zhang, Zhihong Zhao, Zhenyu Chen</p>
     <p class="hp-paper__meta"><span class="hp-venue">FSE 2023</span><span class="hp-paper__links"><a href="https://dl.acm.org/doi/10.1145/3611643.3616345" rel="external">paper</a><a href="https://github.com/SSCT-Lab/DFauLo" rel="external">code</a></span></p>
   </li>
   <li class="hp-paper">
-    <a class="hp-paper__title" href="https://dl.acm.org/doi/10.1145/3609437.3609446" rel="external">Prioritizing Testing Instances to Enhance the Robustness of Object Detection Systems</a>
+    <span class="hp-paper__title">Prioritizing Testing Instances to Enhance the Robustness of Object Detection Systems</span>
     <p class="hp-paper__authors"><span class="hp-me">Shihao Weng</span>, Yang Feng*, Yining Yin, Jia Liu</p>
     <p class="hp-paper__meta"><span class="hp-venue">Internetware 2023</span> · <span class="hp-honor">Distinguished Paper Award</span><span class="hp-paper__links"><a href="https://dl.acm.org/doi/10.1145/3609437.3609446" rel="external">paper</a><a href="https://github.com/wengshihao/DeepView" rel="external">code</a></span></p>
   </li>
