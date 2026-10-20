@@ -2,7 +2,7 @@
 <h2 class="hp-h2">Honors</h2>
 
 <ul class="hp-rows">
-  <li><span class="hp-when">2023–25</span><span>Outstanding Graduate Student, Nanjing University <span class="hp-muted">(×3)</span></span></li>
+  <li><span class="hp-when">2023–24</span><span>Outstanding Graduate Student, Nanjing University <span class="hp-muted">(×2)</span></span></li>
   <li><span class="hp-when">2023</span><span>National Scholarship for Graduate Students</span></li>
   <li><span class="hp-when">2023</span><span>Distinguished Paper Award, Internetware 2023</span></li>
   <li><span class="hp-when">2021</span><span>CCF Outstanding Undergraduate Student</span></li>
