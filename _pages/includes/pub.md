@@ -1,5 +1,5 @@
 <section class="hp-section" id="publications">
-<h2 class="hp-h2">Publications <span class="hp-h2__aside">* corresponding author</span></h2>
+<h2 class="hp-h2">Publications <span class="hp-h2__aside">&dagger; equal contribution&emsp;* corresponding author</span></h2>
 
 <div class="hp-year">
 <span class="hp-year__label">2026</span>
@@ -23,6 +23,11 @@
     <span class="hp-paper__title">VADA: A Multicultural Benchmark for Value-Aware Data Generation and Alignment Evaluation in LLMs</span>
     <p class="hp-paper__authors">Zhenlun Zhang, Yang Feng*, <span class="hp-me">Shihao Weng</span>, Yining Yin, Jincheng Li, Jia Liu</p>
     <p class="hp-paper__meta"><span class="hp-venue">ICSE 2026</span><span class="hp-paper__links"><a href="https://dl.acm.org/doi/10.1145/3744916.3787807" rel="external">paper</a><a href="https://github.com/zzlzxc/VADA-tool" rel="external">code</a></span></p>
+  </li>
+  <li class="hp-paper">
+    <span class="hp-paper__title">When Code Becomes an LLM Call: An Empirical Study of Call-Site Contracts in Agentic Systems</span>
+    <p class="hp-paper__authors"><span class="hp-me">Shihao Weng</span>&dagger;, Longtian Wang&dagger;, Yang Feng*, Mingfei Cheng, Jia Liu, Chao Shen, He Ye, Federica Sarro, Xiaofei Xie</p>
+    <p class="hp-paper__meta"><span class="hp-venue">arXiv preprint</span><span class="hp-paper__links"><a href="https://arxiv.org/abs/2610.24545" rel="external">paper</a></span></p>
   </li>
   <li class="hp-paper">
     <span class="hp-paper__title">AgentAntibody: An Adaptive Immune System for Defending LLM Agents against Prompt Injection</span>
