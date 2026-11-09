@@ -7,7 +7,7 @@
   <li class="hp-paper">
     <span class="hp-paper__title">Are LLM Safety Judges Policy-Invariant? A Three-Principle Stress-Test</span>
     <p class="hp-paper__authors"><span class="hp-me">Shihao Weng</span>, Yang Feng*, Xiaofei Xie</p>
-    <p class="hp-paper__meta"><span class="hp-venue">NeurIPS 2026</span> ED Track · <span class="hp-honor">Spotlight</span><span class="hp-paper__links"><span class="hp-soon">paper &amp; code coming soon</span></span></p>
+    <p class="hp-paper__meta"><span class="hp-venue">NeurIPS 2026</span> ED Track · <span class="hp-honor">Spotlight</span><span class="hp-paper__links"><a href="https://arxiv.org/abs/2605.06161" rel="external">paper</a><a href="https://github.com/wengshihao/policy-invariance-judge" rel="external">code</a></span></p>
   </li>
   <li class="hp-paper">
     <span class="hp-paper__title">TACO: Trust Assessment of Large Language Models in Coding Assistance Tasks</span>
