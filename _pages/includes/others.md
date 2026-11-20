@@ -11,5 +11,5 @@
 <footer class="hp-footer">
   <span>© {{ site.time | date: "%Y" }} Shihao Weng</span>
   <span>Updated {{ site.time | date: "%b %Y" }}</span>
-  <button class="hp-theme" type="button" aria-label="Toggle dark mode" data-vc-theme-toggle><span data-vc-theme-icon>◐</span></button>
+  <button class="hp-theme" type="button" aria-label="Switch to dark mode" data-vc-theme-toggle><i class="fas fa-moon" aria-hidden="true" data-vc-theme-icon></i></button>
 </footer>

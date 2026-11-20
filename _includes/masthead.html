@@ -3,7 +3,9 @@
     var btn, icon;
     function paint() {
       var t = document.documentElement.getAttribute('data-theme') || 'light';
-      if (icon) icon.textContent = t === 'dark' ? '☾' : '☀';
+      // Show the mode a click switches to: moon in light mode, sun in dark.
+      if (icon) icon.className = t === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+      if (btn) btn.setAttribute('aria-label', t === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
     }
     function bind() {
       btn = document.querySelector('[data-vc-theme-toggle]');
@@ -18,10 +20,36 @@
         paint();
       });
     }
+    // Section headings get a link icon (shown on hover) that copies a direct
+    // link to that section.
+    function anchors() {
+      var heads = document.querySelectorAll('.hp-section[id] > .hp-h2');
+      Array.prototype.forEach.call(heads, function (h) {
+        var id = h.parentNode.id;
+        var a = document.createElement('a');
+        a.className = 'hp-anchor';
+        a.href = '#' + id;
+        a.setAttribute('aria-label', 'Copy link to this section');
+        a.innerHTML = '<i class="fas fa-link" aria-hidden="true"></i>';
+        var aside = h.querySelector('.hp-h2__aside');
+        h.insertBefore(a, aside);
+        a.addEventListener('click', function (e) {
+          e.preventDefault();
+          history.replaceState(null, '', '#' + id);
+          var i = a.firstChild, done = function () {
+            i.className = 'fas fa-check';
+            a.classList.add('is-copied');
+            setTimeout(function () { i.className = 'fas fa-link'; a.classList.remove('is-copied'); }, 1400);
+          };
+          try { navigator.clipboard.writeText(location.href).then(done, done); } catch (err) { done(); }
+        });
+      });
+    }
+    function init() { bind(); anchors(); }
     if (document.readyState === 'loading') {
-      document.addEventListener('DOMContentLoaded', bind);
+      document.addEventListener('DOMContentLoaded', init);
     } else {
-      bind();
+      init();
     }
   })();
 </script>

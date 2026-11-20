@@ -19,31 +19,32 @@ Requires the GitHub Pages Ruby toolchain (Ruby + RubyGems + GCC + Make). The sit
 
 ## Content architecture
 
-The single rendered page is `_pages/about.md`, which uses Jekyll's `include_relative` to stitch together six content fragments — edits to the homepage almost always land in one of these:
+The single rendered page is `_pages/about.md`, which uses Jekyll's `include_relative` to stitch together seven content fragments — edits to the homepage almost always land in one of these:
 
 ```
 _pages/about.md
 └── _pages/includes/
-    ├── intro.md     # name, bio + research directions, profile links, photo carousel
+    ├── intro.md     # name, role lines with small gray logos (images/NJU-logo.svg, images/ByteDance-logo.svg), bio, profile links, photo
+    ├── vision.md    # Research vision map: inline SVG chart (styles: hp-vm__* in main.scss; keep it free of blank lines so kramdown leaves the HTML block intact)
     ├── news.md      # News rows
     ├── pub.md       # Publications, grouped by year
     ├── honers.md    # Honors
     ├── service.md   # Service
-    └── others.md    # Education + page footer (visit counter, theme toggle)
+    └── others.md    # Education + page footer (dark-mode toggle)
 ```
 
 `_pages/includes` (and the repo's `AGENTS.md` / `CLAUDE.md` / `README.md`) are listed in `_config.yml` `exclude:` — `include_relative` still reads the fragments, but otherwise GitHub Pages (via `jekyll-optional-front-matter`) publishes each one as a standalone page with the homepage's title, which pollutes the sitemap and competes with the homepage in search. Keep them excluded. A schema.org `Person` JSON-LD block with name variants (Weng Shihao, 翁诗浩) lives in `_includes/head/custom.html` and renders on the homepage only.
 
 The homepage is single-column: `about.md` sets `author_profile: false`, so the sidebar (`_includes/author-profile.html`) is not rendered. The photo carousel lives in `_includes/profile-carousel.html` and is included from `intro.md`; photos are listed under `author.photos` in `_config.yml`. Author identity (name, photos, social links) lives in `_config.yml` under `author:` — change it there, not in the layouts.
 
-Design: typographic, card-free. Exo is the display face (name, headings, dates, venues); Inter is the body face. All homepage styles use the `hp-` prefix in `assets/css/main.scss`; colors are tokens on `:root` with a `[data-theme="dark"]` override.
+Design: typographic, card-free. Exo is the display face (name, headings, dates, venues); Inter is the body face. Section headings get a hover link icon (`.hp-anchor`) injected by the script in `_includes/masthead.html`, which also drives the theme toggle. All homepage styles use the `hp-` prefix in `assets/css/main.scss`; colors are tokens on `:root` with a `[data-theme="dark"]` override.
 
 Row pattern shared by News / Honors / Service / Education: `<ul class="hp-rows"><li><span class="hp-when">…</span><span>…</span></li></ul>`.
 
 Publication entry pattern in `pub.md` (inside a `.hp-year` group's `<ol class="hp-papers">`):
 - `.hp-paper__title` — always a plain `<span>` (not a link, so the title is easy to select and copy); links go in `.hp-paper__links`.
 - `.hp-paper__authors` — wrap the site owner's name in `<span class="hp-me">`; `*` marks the corresponding author.
-- `.hp-paper__meta` — `<span class="hp-venue">` with the full venue name and year (e.g. `NeurIPS 2026`, `arXiv preprint`), optional `<span class="hp-honor">` for awards/spotlights, then `<span class="hp-paper__links">` with plain `paper` / `code` / `tool` links.
+- `.hp-paper__meta` — `<span class="hp-venue">` with the short venue name and year (e.g. `NeurIPS 2026`, `EMSE 2024`, `arXiv preprint` — preprints add `hp-venue--preprint`, which mutes the label), then an optional `<span class="hp-honor">` for awards/spotlights right beside it, then `<span class="hp-venue__full">` with the full venue name (no "In Proceedings of the Nth"; track goes here, e.g. `…, E&amp;D Track`; preprints have none) — no `·` or other separator glyphs, spacing and color do the separating — then `<span class="hp-paper__links">` with `paper` / `code` / `tool` links (rendered on their own line), each led by a Font Awesome icon: `fas fa-file-alt` for paper, `fab fa-github` for GitHub code (`fas fa-code` for other code hosts), `fas fa-wrench` for tool — e.g. `<a href="…" rel="external"><i class="fas fa-file-alt" aria-hidden="true"></i>paper</a>`.
 
 ## CV
 

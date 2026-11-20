@@ -14,6 +14,10 @@ var breaks = [];
 
 function updateNav() {
 
+  // This site has no masthead nav; without this guard the overflow check
+  // recurses forever (null widths) and throws on every load/resize.
+  if (!$nav.length) return;
+
   var availableSpace = $btn.hasClass('hidden') ? $nav.width() : $nav.width() - $btn.width() - 30;
 
   // The visible list is overflowing the nav

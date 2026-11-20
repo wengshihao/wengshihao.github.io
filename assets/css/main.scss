@@ -45,9 +45,13 @@
   --hp-line: #e7e6e1;
   --hp-accent: #1f4fd1;
   --hp-accent-line: rgba(31, 79, 209, .32);
+  --hp-accent-2: #5b7ff0;
   --hp-honor: #b4530a;
   --hp-display: "Exo", ui-sans-serif, system-ui, sans-serif;
   --hp-sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  /* Exo and Inter have no CJK glyphs; name a good Chinese face per platform
+     instead of leaving it to the browser default. */
+  --hp-cjk: "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Source Han Sans SC", "Microsoft YaHei", sans-serif;
 }
 
 [data-theme="dark"] {
@@ -58,6 +62,7 @@
   --hp-line: #262a31;
   --hp-accent: #93b2ff;
   --hp-accent-line: rgba(147, 178, 255, .36);
+  --hp-accent-2: #5b7ff0;
   --hp-honor: #f0a35e;
 }
 
@@ -120,6 +125,15 @@ strong { color: var(--hp-ink); font-weight: 600; }
 
 .page__content { padding: 0 !important; font-size: 1rem; }
 
+/* Line breaking: no one-word last lines in prose; even line lengths in
+   headings and paper titles. Ignored by browsers that lack support. */
+.page__content p,
+.page__content .hp-rows li > span:last-child { text-wrap: pretty; }
+
+.page__content .hp-name,
+.page__content .hp-h2,
+.hp-paper__title { text-wrap: balance; }
+
 /* ==========================================================================
    Intro
    ========================================================================== */
@@ -148,7 +162,7 @@ strong { color: var(--hp-ink); font-weight: 600; }
 .hp-name__zh {
   margin-left: .25em;
   color: var(--hp-muted);
-  font-family: var(--hp-sans);
+  font-family: var(--hp-cjk);
   font-size: .48em;
   font-weight: 500;
   letter-spacing: .06em;
@@ -161,7 +175,26 @@ strong { color: var(--hp-ink); font-weight: 600; }
   font-family: var(--hp-display);
   font-size: 16.5px;
   font-weight: 500;
+  line-height: 1.55;
 }
+
+/* One current position per line, so they read at a glance under the name. */
+.hp-role > span {
+  display: flex;
+  align-items: center;
+  gap: .5em;
+}
+
+/* Small logos in their own brand colors, sized to the text. */
+.hp-role__logo {
+  flex: none;
+  width: 18px;   /* same box for both, so the two text lines start aligned */
+  height: 17px;
+  object-fit: contain;
+}
+
+/* NJU's deep purple disappears on the dark background; lift it a little. */
+[data-theme="dark"] .hp-role__logo--nju { filter: brightness(1.9) saturate(.75); }
 
 .hp-intro__text p {
   max-width: 660px;
@@ -182,6 +215,15 @@ strong { color: var(--hp-ink); font-weight: 600; }
   text-decoration-color: var(--hp-line);
   text-decoration-thickness: 1.5px;
   text-underline-offset: 3px;
+}
+
+/* Bio hierarchy: organizations read first (heavier, no underline), people
+   second (regular weight, faint underline). Both turn accent on hover. */
+.hp-intro__text p a { text-decoration-thickness: 1px; }
+
+.hp-intro__text p a.hp-org {
+  font-weight: 600;
+  text-decoration-color: transparent;
 }
 
 .hp-intro__text p a:hover,
@@ -241,8 +283,7 @@ strong { color: var(--hp-ink); font-weight: 600; }
 .page__content .hp-h2 {
   display: flex;
   align-items: baseline;
-  justify-content: space-between;
-  gap: 16px;
+  gap: 10px;
   margin: 0 0 18px;
   padding: 0 0 10px;
   color: var(--hp-ink);
@@ -256,12 +297,39 @@ strong { color: var(--hp-ink); font-weight: 600; }
 }
 
 .hp-h2__aside {
+  margin-left: auto;
   color: var(--hp-muted);
   font-family: var(--hp-sans);
   font-size: 13px;
   font-weight: 400;
   letter-spacing: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  column-gap: 1.2em;
 }
+
+.hp-h2__aside > span { white-space: nowrap; }
+
+/* Link icon beside each section heading (added by masthead.html): hidden until
+   the heading is hovered or the icon is focused; click copies the link. */
+.page__content .hp-anchor {
+  align-self: center;
+  color: var(--hp-muted);
+  font-size: 13px;
+  text-decoration: none;
+  opacity: 0;
+  transition: opacity .15s ease, color .15s ease;
+}
+
+.hp-h2:hover .hp-anchor,
+.page__content .hp-anchor:focus-visible,
+.page__content .hp-anchor.is-copied { opacity: 1; }
+
+.page__content .hp-anchor:hover,
+.page__content .hp-anchor.is-copied { color: var(--hp-accent); }
+
+@media (hover: none) { .page__content .hp-anchor { display: none; } }
 
 .hp-when {
   color: var(--hp-muted);
@@ -370,20 +438,41 @@ strong { color: var(--hp-ink); font-weight: 600; }
   font-weight: 600;
 }
 
+/* Preprints step down a level so published venues stand out at a glance. */
+.hp-venue--preprint {
+  color: var(--hp-muted);
+  font-weight: 500;
+}
+
+/* Short venue leads (bold, scannable) with any award right beside it in the
+   accent color, so "NeurIPS 2026 Spotlight" reads as one label; the full
+   venue name follows, muted. Spacing and color separate them, not glyphs. */
+.hp-paper__meta .hp-honor {
+  margin-left: .4em;
+  font-family: var(--hp-display);
+}
+
+.hp-venue__full { margin-left: .6em; }
+
 .hp-paper__links {
-  display: inline-flex;
+  display: flex;
+  flex-wrap: wrap;
   gap: 14px;
-  margin-left: 16px;
+  margin-top: 2px;
 }
 
 .hp-paper__links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
   color: var(--hp-accent);
   font-size: 13.5px;
   font-weight: 500;
 }
 
-.hp-paper__links a:before { content: "["; color: var(--hp-muted); }
-.hp-paper__links a:after { content: "]"; color: var(--hp-muted); }
+/* Same icon-plus-label treatment as the profile links in the intro. */
+.hp-paper__links i { font-size: 11.5px; }
+
 .page__content .hp-paper__links a:hover { text-decoration: underline; text-underline-offset: 3px; }
 
 .hp-soon {
@@ -408,22 +497,91 @@ strong { color: var(--hp-ink); font-weight: 600; }
   font-size: 13px;
 }
 
+/* Theme toggle: a quiet icon at the right end of the footer, gray at rest and
+   accent on hover, like the profile-link icons. */
 .hp-theme {
   margin-left: auto;
-  width: 30px;
-  height: 30px;
+  margin-right: -8px;
+  width: 32px;
+  height: 32px;
   padding: 0;
-  display: inline-grid;
+  display: grid;
   place-items: center;
   color: var(--hp-muted);
   background: transparent;
-  border: 1px solid var(--hp-line);
+  border: 0;
   border-radius: 8px;
-  font-size: 13px;
+  font-size: 15px;
   cursor: pointer;
+  transition: color .15s ease;
 }
 
-.hp-theme:hover { color: var(--hp-ink); }
+.hp-theme:hover { color: var(--hp-accent); }
+.hp-theme:focus-visible { outline: 2px solid var(--hp-accent); outline-offset: 2px; }
+
+/* ==========================================================================
+   Research vision map (_pages/includes/vision.md)
+   ========================================================================== */
+
+.page__content .hp-vm__kicker {
+  margin: 0;
+  color: var(--hp-accent);
+  font-family: var(--hp-display);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+
+.page__content .hp-vm__head {
+  margin: 4px 0 2px;
+  color: var(--hp-ink);
+  font-family: var(--hp-display);
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -.01em;
+  text-wrap: balance;
+}
+
+.hp-vm__head span { color: var(--hp-accent); }
+
+.page__content .hp-vm__sub {
+  margin: 0 0 6px;
+  color: var(--hp-muted);
+  font-size: 14.5px;
+}
+
+.hp-vm__chart {
+  display: block;
+  width: 100%;
+  max-width: 660px;   /* same measure as the bio text above */
+  height: auto;
+  margin-top: 4px;
+  overflow: visible;
+}
+
+.hp-vm__chart text { font-family: var(--hp-display); }
+.hp-vm__chart .vm-ax { font-size: 13.5px; font-weight: 500; fill: var(--hp-muted); }
+.hp-vm__chart .vm-ax.is-now { fill: var(--hp-ink); font-weight: 600; }
+.hp-vm__chart .vm-axs { font-family: var(--hp-sans); font-size: 11.5px; fill: var(--hp-muted); opacity: .85; }
+.hp-vm__chart .vm-tag { font-size: 11.5px; font-weight: 600; letter-spacing: .14em; fill: var(--hp-muted); }
+.hp-vm__chart .vm-cl { font-size: 14px; font-weight: 600; }
+.hp-vm__chart .vm-lv { font-size: 13.5px; font-weight: 600; fill: var(--hp-accent); }
+.hp-vm__chart .vm-halo { paint-order: stroke; stroke: var(--hp-bg); stroke-width: 4px; stroke-linejoin: round; }
+
+/* The blue path draws in once; the travelling dot starts after it. */
+.hp-vm__chart .vm-draw {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation: hp-vm-draw 1.6s cubic-bezier(.2, .7, .2, 1) .2s forwards;
+}
+
+@keyframes hp-vm-draw { to { stroke-dashoffset: 0; } }
+
+@media (prefers-reduced-motion: reduce) {
+  .hp-vm__chart .vm-draw { animation: none; stroke-dashoffset: 0; }
+}
 
 /* ==========================================================================
    Small screens
@@ -445,6 +603,22 @@ strong { color: var(--hp-ink); font-weight: 600; }
 
   .hp-section { margin-top: 56px; }
 
+  .page__content .hp-vm__head { font-size: 19px; }
+
+  /* Keep the chart readable: fixed width, swipe sideways, fade at the edge. */
+  .hp-vm__scroll {
+    margin: 0 -20px;
+    padding: 0 20px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -webkit-mask-image: linear-gradient(90deg, #000 85%, transparent);
+    mask-image: linear-gradient(90deg, #000 85%, transparent);
+  }
+
+  .hp-vm__scroll::-webkit-scrollbar { display: none; }
+  .hp-vm__chart { width: 640px; max-width: none; }
+
   .page__content .hp-rows li {
     grid-template-columns: 72px minmax(0, 1fr);
     gap: 14px;
@@ -456,8 +630,6 @@ strong { color: var(--hp-ink); font-weight: 600; }
   }
 
   .hp-year__label { position: static; padding-top: 4px; }
-
-  .hp-paper__links { display: flex; margin: 2px 0 0; }
 }
 
 @media print {
