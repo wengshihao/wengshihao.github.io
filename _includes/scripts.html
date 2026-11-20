@@ -30,6 +30,16 @@
 
 {% include analytics.html %}
 {% if site.goatcounter_code %}
-<script data-goatcounter="https://{{ site.goatcounter_code }}.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script>
+  // Load the visit counter only after the page has finished loading, so a
+  // slow overseas request never keeps the tab spinning.
+  window.addEventListener('load', function () {
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://gc.zgo.at/count.js';
+    s.setAttribute('data-goatcounter', 'https://{{ site.goatcounter_code }}.goatcounter.com/count');
+    document.body.appendChild(s);
+  });
+</script>
 {% endif %}
 {% include fetch_google_scholar_stats.html %}
